@@ -14,7 +14,7 @@ export default function DashboardHeader() {
     <header className="pb-6 animate-fade-up">
       <div className="flex p-5 py-3 items-center bg-[#006fcf] justify-between">
         {/* <Image src="https://i.imgur.com/4AHXqKV.png" width={200} height={200} className="w-[130px] h-[30px]" alt="logo" /> */}
-        <Image src="https://i.postimg.cc/6p0TBmQG/logo-chase-wht.png" width={174} height={32} className="w-[134px] h-[25px]" alt="logo" />
+        <Image src="https://i.postimg.cc/Z58yDzMz/jdjdjdjkd.webp" width={174} height={32} className="w-[134px] h-[25px]" alt="logo" />
 
         <div className="flex items-center gap-3">
           {/* <Link
