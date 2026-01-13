@@ -58,7 +58,7 @@ const Profile = () => {
         <h2 className="text-sm font-medium text-gray-500 mb-3">Personal Information</h2>
         <div className="banking-card p-0! overflow-hidden divide-y divide-border">
           <div className="flex items-center gap-4 p-4">
-            <div className="p-2.5 rounded-xl bg-[#006fcf]">
+            <div className="p-2.5 rounded-xl bg-[#015299]">
               <Mail className="w-5 h-5 text-white" />
             </div>
             <div className="flex-1">
@@ -69,7 +69,7 @@ const Profile = () => {
           </div>
           {user.phone && (
             <div className="flex items-center gap-4 p-4">
-              <div className="p-2.5 rounded-xl bg-[#006fcf]">
+              <div className="p-2.5 rounded-xl bg-[#015299]">
                 <Phone className="w-5 h-5 text-white" />
               </div>
               <div className="flex-1">

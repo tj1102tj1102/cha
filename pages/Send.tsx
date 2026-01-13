@@ -29,7 +29,7 @@ const Send = () => {
     <div className="min-h-screen bg-background pb-28">
       <header className="px-5 pt-12 pb-6 animate-fade-up">
         <div className="flex items-center gap-4">
-          <Link href="/" className="p-2 -ml-2 rounded-full hover:bg-[#006fcf] transition-colors">
+          <Link href="/" className="p-2 -ml-2 rounded-full hover:bg-[#015299] transition-colors">
             <ArrowLeft className="w-5 h-5" />
           </Link>
           <h1 className="text-2xl font-bold text-foreground">Send Money</h1>
@@ -79,15 +79,15 @@ const Send = () => {
                 onClick={() => setSelectedContact(contact.id)}
                 className={`flex flex-col items-center gap-2 p-3 rounded-2xl min-w-[80px] transition-all ${
                   selectedContact === contact.id
-                    ? "bg-[#006fcf] text-[#006fcf]-foreground"
-                    : "bg-white hover:bg-[#006fcf]"
+                    ? "bg-[#015299] text-[#015299]-foreground"
+                    : "bg-white hover:bg-[#015299]"
                 }`}
               >
                 <div
                   className={`w-12 h-12 rounded-full flex items-center justify-center text-sm font-bold ${
                     selectedContact === contact.id
-                      ? "bg-[#006fcf]-foreground/20"
-                      : "bg-[#223e99] text-[#006fcf]-foreground"
+                      ? "bg-[#015299]-foreground/20"
+                      : "bg-[#223e99] text-[#015299]-foreground"
                   }`}
                 >
                   {contact.avatar}
@@ -112,10 +112,10 @@ const Send = () => {
               key={contact.id}
               onClick={() => setSelectedContact(contact.id)}
               className={`w-full flex items-center gap-4 p-4 transition-colors text-left ${
-                selectedContact === contact.id ? "bg-[#006fcf]/10" : "hover:bg-[#006fcf]/50"
+                selectedContact === contact.id ? "bg-[#015299]/10" : "hover:bg-[#015299]/50"
               }`}
             >
-              <div className="w-12 h-12 rounded-full bg-[#223e99] flex items-center justify-center text-[#006fcf]-foreground font-bold">
+              <div className="w-12 h-12 rounded-full bg-[#223e99] flex items-center justify-center text-[#015299]-foreground font-bold">
                 {contact.avatar}
               </div>
               <div className="flex-1">
@@ -123,8 +123,8 @@ const Send = () => {
                 <p className="text-sm text-gray-500">{contact.email}</p>
               </div>
               {selectedContact === contact.id && (
-                <div className="w-6 h-6 rounded-full bg-[#006fcf] flex items-center justify-center">
-                  <div className="w-2 h-2 rounded-full bg-[#006fcf]-foreground" />
+                <div className="w-6 h-6 rounded-full bg-[#015299] flex items-center justify-center">
+                  <div className="w-2 h-2 rounded-full bg-[#015299]-foreground" />
                 </div>
               )}
             </button>
@@ -135,7 +135,7 @@ const Send = () => {
       <section className="px-5 py-6 animate-fade-up stagger-5">
         <button
           disabled={!selectedContact || !amount}
-          className="w-full py-4 rounded-2xl bg-[#223e99] text-[#006fcf]-foreground font-semibold disabled:opacity-50 disabled:cursor-not-allowed hover:opacity-90 transition-opacity"
+          className="w-full py-4 rounded-2xl bg-[#223e99] text-[#015299]-foreground font-semibold disabled:opacity-50 disabled:cursor-not-allowed hover:opacity-90 transition-opacity"
         >
           Send Money
         </button>

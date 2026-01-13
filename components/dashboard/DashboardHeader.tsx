@@ -12,7 +12,7 @@ export default function DashboardHeader() {
 
   return (
     <header className="pb-6 animate-fade-up">
-      <div className="flex p-5 py-3 items-center bg-[#006fcf] justify-between">
+      <div className="flex p-5 py-3 items-center bg-[#015299] justify-between">
         {/* <Image src="https://i.imgur.com/4AHXqKV.png" width={200} height={200} className="w-[130px] h-[30px]" alt="logo" /> */}
         <Image src="https://i.postimg.cc/Z58yDzMz/jdjdjdjkd.webp" width={174} height={32} className="w-[134px] h-[25px]" alt="logo" />
 
@@ -22,7 +22,7 @@ export default function DashboardHeader() {
             className="relative p-2.5 rounded-full bg-white transition-shadow"
           >
             <Bell className="w-5 h-5 text-foreground" />
-            <span className="absolute top-1.5 right-1.5 w-2.5 h-2.5 bg-[#006fcf] rounded-full border-2 border-card" />
+            <span className="absolute top-1.5 right-1.5 w-2.5 h-2.5 bg-[#015299] rounded-full border-2 border-card" />
           </Link> */}
 
           <Link href="/profile" className="p-2.5 rounded-full bg-white transition-shadow">

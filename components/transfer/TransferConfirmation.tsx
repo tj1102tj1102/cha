@@ -37,7 +37,7 @@ const TransferConfirmation = ({
         <div className="flex items-center gap-4">
           <button
             onClick={onCancel}
-            className="p-2 -ml-2 rounded-full hover:bg-[#006fcf] transition-colors"
+            className="p-2 -ml-2 rounded-full hover:bg-[#015299] transition-colors"
           >
             <ArrowLeft className="w-5 h-5" />
           </button>
@@ -135,8 +135,8 @@ const DetailRow = ({
 
 // const EstimatedArrival = () => (
 //   <section className="px-5 mb-4 animate-fade-up stagger-3">
-//     <div className="bg-[#006fcf]/10 rounded-2xl p-4 flex items-start gap-3">
-//       <div className="p-1 rounded-full bg-[#006fcf]">
+//     <div className="bg-[#015299]/10 rounded-2xl p-4 flex items-start gap-3">
+//       <div className="p-1 rounded-full bg-[#015299]">
 //         <Check className="w-4 h-4 text-white" />
 //       </div>
 //       <div>
@@ -174,7 +174,7 @@ const ActionButtons = ({
     <button
       onClick={onCancel}
       disabled={isProcessing}
-      className="w-full py-4 cursor-pointer rounded-2xl bg-[#006fcf]/70 text-white font-semibold text-lg transition-colors hover:bg-[#006fcf] active:scale-[0.98] disabled:opacity-50"
+      className="w-full py-4 cursor-pointer rounded-2xl bg-[#015299]/70 text-white font-semibold text-lg transition-colors hover:bg-[#015299] active:scale-[0.98] disabled:opacity-50"
     >
       Cancel
     </button>

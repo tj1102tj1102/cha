@@ -27,7 +27,7 @@ const HelpCenter = () => {
     <div className="min-h-screen bg-background pb-28">
       <header className="px-5 pt-12 pb-6 animate-fade-up">
         <div className="flex items-center gap-4">
-          <Link href="/more" className="p-2 -ml-2 rounded-full hover:bg-[#006fcf] transition-colors">
+          <Link href="/more" className="p-2 -ml-2 rounded-full hover:bg-[#015299] transition-colors">
             <ArrowLeft className="w-5 h-5" />
           </Link>
           <h1 className="text-2xl font-bold text-foreground">Help Center</h1>
@@ -51,8 +51,8 @@ const HelpCenter = () => {
         <h2 className="text-sm font-medium text-gray-500mb-3">Contact Us</h2>
         <div className="grid grid-cols-3 gap-3">
           <button className="banking-card flex flex-col items-center gap-2 py-4">
-            <div className="p-3 rounded-xl bg-[#006fcf]/10">
-              <MessageCircle className="w-5 h-5 text-[#006fcf]" />
+            <div className="p-3 rounded-xl bg-[#015299]/10">
+              <MessageCircle className="w-5 h-5 text-[#015299]" />
             </div>
             <span className="text-sm font-medium text-foreground">Chat</span>
           </button>
@@ -76,7 +76,7 @@ const HelpCenter = () => {
         <div className="grid grid-cols-2 gap-3">
           {faqCategories.map((category) => (
             <button key={category.id} className="banking-card flex items-center gap-3 text-left">
-              <div className="p-2.5 rounded-xl bg-[#006fcf]">
+              <div className="p-2.5 rounded-xl bg-[#015299]">
                 <category.icon className="w-5 h-5 text-foreground" />
               </div>
               <div>
@@ -94,7 +94,7 @@ const HelpCenter = () => {
           {popularQuestions.map((faq) => (
             <button
               key={faq.id}
-              className="w-full flex items-center justify-between p-4 hover:bg-[#006fcf]/50 transition-colors text-left"
+              className="w-full flex items-center justify-between p-4 hover:bg-[#015299]/50 transition-colors text-left"
             >
               <div className="flex items-center gap-3">
                 <HelpCircle className="w-5 h-5 text-gray-500" />

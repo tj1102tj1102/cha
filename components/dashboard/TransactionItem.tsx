@@ -20,7 +20,7 @@ const statusConfig = {
 const TransactionItem = ({ merchant, category, date, amount, status = 'success' }: TransactionItemProps) => {
   const isCredit = amount >= 0;
   const Icon = isCredit ? ArrowDownLeft : ArrowUpRight;
-  const iconBg = isCredit ? 'bg-[#006fcf]/10 text-[#006fcf]' : 'bg-[#006fcf]/10 text-[#006fcf]';
+  const iconBg = isCredit ? 'bg-[#015299]/10 text-[#015299]' : 'bg-[#015299]/10 text-[#015299]';
 
   const formatCurrency = (value: number) => {
     const formatted = new Intl.NumberFormat('en-US', {
@@ -34,7 +34,7 @@ const TransactionItem = ({ merchant, category, date, amount, status = 'success' 
   const statusInfo = statusConfig[status];
 
   return (
-    <div className="flex items-center gap-3 py-3 border-b border-gray-200 last:border-0 hover:bg-[#006fcf]/30 -mx-2 px-2 rounded-lg transition-colors cursor-pointer">
+    <div className="flex items-center gap-3 py-3 border-b border-gray-200 last:border-0 hover:bg-[#015299]/30 -mx-2 px-2 rounded-lg transition-colors cursor-pointer">
       <div className={`p-2.5 rounded-xl ${iconBg}`}>
         <Icon className="w-5 h-5" />
       </div>

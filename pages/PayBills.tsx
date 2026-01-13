@@ -25,7 +25,7 @@ const PayBills = () => {
     <div className="min-h-screen bg-background pb-28">
       <header className="px-5 pt-12 pb-6 animate-fade-up">
         <div className="flex items-center gap-4">
-          <Link href="/" className="p-2 -ml-2 rounded-full hover:bg-[#006fcf] transition-colors">
+          <Link href="/" className="p-2 -ml-2 rounded-full hover:bg-[#015299] transition-colors">
             <ArrowLeft className="w-5 h-5" />
           </Link>
           <h1 className="text-2xl font-bold text-foreground">Pay Bills</h1>
@@ -41,7 +41,7 @@ const PayBills = () => {
           <p className="text-3xl font-bold text-foreground">
             ${billers.reduce((sum, b) => sum + b.amount, 0).toLocaleString("en-US", { minimumFractionDigits: 2 })}
           </p>
-          <button className="mt-4 w-full py-3 rounded-xl bg-[#223e99] text-[#006fcf]-foreground font-medium">
+          <button className="mt-4 w-full py-3 rounded-xl bg-[#223e99] text-[#015299]-foreground font-medium">
             Pay All Bills
           </button>
         </div>
@@ -50,7 +50,7 @@ const PayBills = () => {
       <section className="px-5 mb-6 animate-fade-up stagger-2">
         <div className="flex items-center justify-between mb-3">
           <h2 className="text-sm font-medium text-gray-500">Upcoming Bills</h2>
-          <button className="text-sm text-[#006fcf] font-medium">See All</button>
+          <button className="text-sm text-[#015299] font-medium">See All</button>
         </div>
         <div className="space-y-3">
           {billers.map((bill) => (
@@ -61,8 +61,8 @@ const PayBills = () => {
                 selectedBill === bill.id ? "ring-2 ring-primary" : ""
               }`}
             >
-              <div className="p-3 rounded-xl bg-[#006fcf]/10">
-                <bill.icon className="w-5 h-5 text-[#006fcf]" />
+              <div className="p-3 rounded-xl bg-[#015299]/10">
+                <bill.icon className="w-5 h-5 text-[#015299]" />
               </div>
               <div className="flex-1">
                 <p className="font-medium text-foreground">{bill.name}</p>
@@ -72,7 +72,7 @@ const PayBills = () => {
                 <p className="font-semibold text-foreground">
                   ${bill.amount.toLocaleString("en-US", { minimumFractionDigits: 2 })}
                 </p>
-                <span className="text-xs px-2 py-0.5 rounded-full bg-[#006fcf] text-gray-500">
+                <span className="text-xs px-2 py-0.5 rounded-full bg-[#015299] text-gray-500">
                   {bill.category}
                 </span>
               </div>
@@ -100,7 +100,7 @@ const PayBills = () => {
       </section>
 
       <section className="px-5 animate-fade-up stagger-4">
-        <button className="w-full flex items-center justify-center gap-3 p-4 rounded-2xl border-2 border-dashed border-gray-200 hover:border-primary hover:bg-[#006fcf]/5 transition-all">
+        <button className="w-full flex items-center justify-center gap-3 p-4 rounded-2xl border-2 border-dashed border-gray-200 hover:border-primary hover:bg-[#015299]/5 transition-all">
           <Plus className="w-5 h-5 text-gray-500" />
           <span className="font-medium text-gray-500">Add New Biller</span>
         </button>

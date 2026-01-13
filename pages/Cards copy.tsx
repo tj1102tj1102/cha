@@ -1,12 +1,13 @@
 'use client';
 
+import { CreditCard } from 'lucide-react';
 import BottomNavigation from '@/components/dashboard/BottomNavigation';
 import { useAuthStore } from '@/store/authStore';
 import { useRouter } from 'next/navigation';
 import { useEffect, useMemo } from 'react';
 import { getCardsByUserId } from '@/lib/helper-fns';
 import HeaderComp from '@/components/HeaderComp';
-import DebitCard from '@/components/DebitCard';
+import { formatCurrency } from '@/components/formatCurrency';
 
 export default function Cards() {
   const { user } = useAuthStore();
@@ -32,15 +33,15 @@ export default function Cards() {
     return '•••• •••• •••• ' + num.slice(-4);
   };
 
-  // const getCardColor = (cardType: string, isPrimary: boolean) => {
-  //   if (isPrimary && cardType === 'debit') {
-  //     return 'bg-[#015299] text-white';
-  //   }
-  //   if (cardType === 'credit') {
-  //     return 'bg-[#223e99] text-white';
-  //   }
-  //   return 'bg-white text-black';
-  // };
+  const getCardColor = (cardType: string, isPrimary: boolean) => {
+    if (isPrimary && cardType === 'debit') {
+      return 'bg-[#015299] text-white';
+    }
+    if (cardType === 'credit') {
+      return 'bg-[#223e99] text-white';
+    }
+    return 'bg-white text-black';
+  };
 
   return (
     <div className="min-h-screen bg-background pb-52">
@@ -51,8 +52,30 @@ export default function Cards() {
       <section className="px-5 space-y-4 animate-fade-up stagger-1">
         {cards.length > 0 ? (
           cards.map(card => (
-            <div key={card.id} className={``}>
-              <DebitCard cardNumber={`${formatCardNumber(card.cardNumber)}`} cardHolder={`${user?.firstName} ${user?.lastName}`} expiryDate={card.expiryDate} />
+            <div key={card.id} className={`relative rounded-3xl p-6 ${getCardColor(card.cardType, card.isPrimary)} overflow-hidden shadow-lg hover:shadow-xl transition-shadow`}>
+              <div className="flex items-start justify-between mb-8">
+                <div>
+                  <p className="text-xs uppercase tracking-wider opacity-80">{card.cardType}</p>
+                  <p className="font-semibold uppercase">
+                    {user?.firstName} {user?.lastName}
+                  </p>
+                </div>
+                <CreditCard className="w-8 h-8 opacity-80" />
+              </div>
+
+              <p className="text-xl font-mono tracking-widest mb-6">{formatCardNumber(card.cardNumber)}</p>
+
+              <div className="flex items-end justify-between">
+                <div>
+                  <p className="text-xs opacity-80">Expires</p>
+                  <p className="font-medium">{card.expiryDate}</p>
+                </div>
+                <div className="text-right">
+                  <p className="text-xs opacity-80">{card.cardType === 'credit' ? 'Balance' : 'Available'}</p>
+                  <p className="font-semibold text-lg">{formatCurrency(user?.accounts?.reduce((sum, acc) => sum + acc.balance, 0) || 0)}</p>
+                  {card.limit && <p className="text-xs opacity-75 mt-1">Limit: ${card.limit.toLocaleString('en-US')}</p>}
+                </div>
+              </div>
             </div>
           ))
         ) : (

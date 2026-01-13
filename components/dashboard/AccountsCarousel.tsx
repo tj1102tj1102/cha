@@ -26,7 +26,7 @@ const AccountsCarousel = () => {
             <div
               key={index}
               className={`w-2 h-2 rounded-full transition-colors ${
-                index === 0 ? "bg-[#006fcf]" : "bg-gray-700"
+                index === 0 ? "bg-[#015299]" : "bg-gray-700"
               }`}
             />
           ))}

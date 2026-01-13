@@ -8,11 +8,11 @@ import {
 } from "lucide-react";
 
 const actions = [
-  // { icon: Send, label: "Send", color: "bg-[#006fcf]/10 text-[#006fcf]", path: "/send" },
+  // { icon: Send, label: "Send", color: "bg-[#015299]/10 text-[#015299]", path: "/send" },
   { icon: ArrowLeftRight, label: "Transfer", color: "bg-[#e7b00833] text-accent-foreground", path: "/transfer" },
   { icon: CreditCard, label: "Cards", color: "bg-[#e7b00833] text-accent-foreground", path: "/cards" },
   // { icon: Receipt, label: "Pay Bills", color: "bg-[#1fad53]/10 text-[#1fad53]", path: "/pay-bills" },
-  // { icon: Wallet, label: "Budget", color: "bg-[#006fcf]/10 text-[#006fcf]", path: "/budget" },
+  // { icon: Wallet, label: "Budget", color: "bg-[#015299]/10 text-[#015299]", path: "/budget" },
 ];
 
 export default function QuickActions() {

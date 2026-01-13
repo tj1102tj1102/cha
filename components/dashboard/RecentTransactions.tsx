@@ -31,7 +31,7 @@ export default function RecentTransactions() {
 
         <Link
           href="/transactions"
-          className="flex items-center gap-1 text-sm font-medium text-[#006fcf] hover:text-[#006fcf]/80 transition-colors"
+          className="flex items-center gap-1 text-sm font-medium text-[#015299] hover:text-[#015299]/80 transition-colors"
         >
           See All
           <ChevronRight className="w-4 h-4" />

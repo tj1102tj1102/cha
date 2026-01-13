@@ -9,10 +9,10 @@ import { useEffect } from 'react';
 import HeaderComp from '@/components/HeaderComp';
 
 const spendingCategories = [
-  { name: 'Food & Dining', amount: 842.5, percentage: 35, color: 'bg-[#006fcf]' },
+  { name: 'Food & Dining', amount: 842.5, percentage: 35, color: 'bg-[#015299]' },
   { name: 'Shopping', amount: 456.2, percentage: 19, color: 'bg-accent' },
   { name: 'Transportation', amount: 312.8, percentage: 13, color: 'bg-[#1fad53]' },
-  { name: 'Entertainment', amount: 245.0, percentage: 10, color: 'bg-[#006fcf]/60' },
+  { name: 'Entertainment', amount: 245.0, percentage: 10, color: 'bg-[#015299]/60' },
   { name: 'Utilities', amount: 198.5, percentage: 8, color: 'bg-accent/60' },
   { name: 'Other', amount: 356.0, percentage: 15, color: 'text-gray-500' }
 ];
@@ -61,8 +61,8 @@ const Insights = () => {
           </div>
           <div className="banking-card">
             <div className="flex items-center gap-2 mb-2">
-              <div className="p-1.5 rounded-lg bg-[#006fcf]/10">
-                <TrendingDown className="w-4 h-4 text-[#006fcf]" />
+              <div className="p-1.5 rounded-lg bg-[#015299]/10">
+                <TrendingDown className="w-4 h-4 text-[#015299]" />
               </div>
               <span className="text-xs font-medium text-gray-500">Spending</span>
             </div>
@@ -80,9 +80,9 @@ const Insights = () => {
               <div key={data.month} className="flex-1 flex flex-col items-center gap-1">
                 <div className="w-full flex gap-0.5 h-28 items-end">
                   <div className="flex-1 bg-[#1fad53]/20 rounded-t" style={{ height: `${(data.income / maxBarValue) * 100}%` }} />
-                  <div className="flex-1 bg-[#006fcf]/40 rounded-t" style={{ height: `${(data.spending / maxBarValue) * 100}%` }} />
+                  <div className="flex-1 bg-[#015299]/40 rounded-t" style={{ height: `${(data.spending / maxBarValue) * 100}%` }} />
                 </div>
-                <span className={`text-xs ${index === monthlyData.length - 1 ? 'font-semibold text-[#006fcf]' : 'text-gray-500'}`}>{data.month}</span>
+                <span className={`text-xs ${index === monthlyData.length - 1 ? 'font-semibold text-[#015299]' : 'text-gray-500'}`}>{data.month}</span>
               </div>
             ))}
           </div>
@@ -92,7 +92,7 @@ const Insights = () => {
               <span className="text-xs text-gray-500">Income</span>
             </div>
             <div className="flex items-center gap-2">
-              <div className="w-3 h-3 rounded bg-[#006fcf]/40" />
+              <div className="w-3 h-3 rounded bg-[#015299]/40" />
               <span className="text-xs text-gray-500">Spending</span>
             </div>
           </div>
@@ -113,7 +113,7 @@ const Insights = () => {
                   <span className="text-sm font-medium">{category.name}</span>
                   <span className="text-sm font-semibold">${category.amount.toFixed(2)}</span>
                 </div>
-                <div className="h-1.5 bg-[#006fcf] rounded-full overflow-hidden">
+                <div className="h-1.5 bg-[#015299] rounded-full overflow-hidden">
                   <div className={`h-full ${category.color} rounded-full transition-all`} style={{ width: `${category.percentage}%` }} />
                 </div>
               </div>

@@ -23,10 +23,10 @@ const AccountCard = ({ type, name, accountNumber, balance, available, isPrimary 
 
   const maskedAccount = `••••${accountNumber.slice(-4)}`;
 
-  const cardStyles = isPrimary ? 'bg-[#006fcf] text-white' : 'bg-white text-card-foreground shadow-card';
+  const cardStyles = isPrimary ? 'bg-[#015299] text-white' : 'bg-white text-card-foreground shadow-card';
 
   const labelStyles = isPrimary ? 'text-white/70' : 'text-gray-500';
-  const chevronBg = isPrimary ? 'bg-white/20' : 'bg-[#006fcf]';
+  const chevronBg = isPrimary ? 'bg-white/20' : 'bg-[#015299]';
 
   return (
     // <div className={`banking-card bg-red-500 min-w-[280px] `}>

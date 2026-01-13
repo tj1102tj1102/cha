@@ -149,11 +149,11 @@ const FromAccountSection = ({
           onClick={() => onSelect(account.id)}
           className={`w-full flex items-center gap-3 p-4 rounded-2xl transition-all ${
             selectedAccountId === account.id
-              ? 'bg-[#006fcf]/10 border-2 border-[#006fcf]'
+              ? 'bg-[#015299]/10 border-2 border-[#015299]'
               : 'bg-white shadow-card border-2 border-transparent'
           }`}
         >
-          <div className="p-2.5 rounded-md bg-[#006fcf] text-white">
+          <div className="p-2.5 rounded-md bg-[#015299] text-white">
             <Building2 className="w-5 h-5" />
           </div>
           <div className="flex-1 text-left">

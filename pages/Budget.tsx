@@ -10,7 +10,7 @@ import { useRouter } from 'next/navigation';
 const budgets = [
   { id: 1, category: 'Groceries', allocated: 600, spent: 423.5, color: 'bg-[#1fad53]' },
   { id: 2, category: 'Dining Out', allocated: 300, spent: 287.0, color: 'bg-warning' },
-  { id: 3, category: 'Transportation', allocated: 200, spent: 156.8, color: 'bg-[#006fcf]' },
+  { id: 3, category: 'Transportation', allocated: 200, spent: 156.8, color: 'bg-[#015299]' },
   { id: 4, category: 'Entertainment', allocated: 150, spent: 180.0, color: 'bg-[#ef4343]' },
   { id: 5, category: 'Shopping', allocated: 400, spent: 312.45, color: 'bg-accent' },
   { id: 6, category: 'Utilities', allocated: 250, spent: 189.99, color: 'text-gray-500' }
@@ -40,7 +40,7 @@ export default function Budget() {
       {/* Header */}
       <header className="px-5 pt-5 pb-6 animate-fade-up">
         <div className="flex items-center gap-4">
-          <Link href="/" className="p-2 -ml-2 rounded-full hover:bg-[#006fcf] transition-colors">
+          <Link href="/" className="p-2 -ml-2 rounded-full hover:bg-[#015299] transition-colors">
             <ArrowLeft className="w-5 h-5" />
           </Link>
           <h1 className="text-2xl font-bold text">Budget</h1>
@@ -83,7 +83,7 @@ export default function Budget() {
       <section className="px-5 mb-6 animate-fade-up stagger-2">
         <div className="flex items-center justify-between mb-4">
           <h2 className="text-lg font-semibold">Categories</h2>
-          <button className="text-sm text-[#006fcf] font-medium">Edit</button>
+          <button className="text-sm text-[#015299] font-medium">Edit</button>
         </div>
 
         <div className="space-y-3">
@@ -115,7 +115,7 @@ export default function Budget() {
                   </span>
                 </div>
 
-                <div className="h-2 bg-[#006fcf] rounded-full overflow-hidden">
+                <div className="h-2 bg-[#015299] rounded-full overflow-hidden">
                   <div className={`h-full rounded-full transition-all ${isOver ? 'bg-[#ef4343]' : budget.color}`} style={{ width: `${Math.min(percentage, 100)}%` }} />
                 </div>
               </div>
@@ -128,7 +128,7 @@ export default function Budget() {
       {/* <section className="px-5 animate-fade-up stagger-3">
         <button
           className="w-full flex items-center justify-center gap-3 p-4 rounded-2xl border-2 
-        border-dashed border-gray-200 hover:border-primary hover:bg-[#006fcf]/5 transition-all"
+        border-dashed border-gray-200 hover:border-primary hover:bg-[#015299]/5 transition-all"
         >
           <Plus className="w-5 h-5 text-gray-500" />
           <span className="font-medium text-gray-500">Add Budget Category</span>

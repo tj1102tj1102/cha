@@ -50,8 +50,8 @@ const TransactionCodeDialog = ({
     <Dialog open={open} onOpenChange={handleOpenChange}>
       <DialogContent className="max-w-sm mx-auto bg-white">
         <DialogHeader className="text-center items-center">
-          <div className="p-4 rounded-full bg-[#006fcf]/10 mb-4">
-            <Lock className="w-8 h-8 text-[#006fcf]" />
+          <div className="p-4 rounded-full bg-[#015299]/10 mb-4">
+            <Lock className="w-8 h-8 text-[#015299]" />
           </div>
           <DialogTitle className="text-xl font-bold text-foreground">
             Verify Transfer
@@ -75,7 +75,7 @@ const TransactionCodeDialog = ({
               inputMode="numeric"
               disabled={isProcessing}
               className={`w-full px-4 py-4 text-2xl font-bold text-center rounded-md bg-white border-2 focus:ring-1 outline-none transition-all text-foreground placeholder:text-gray-400 disabled:opacity-50 ${
-                error ? 'border-[#ef4343] focus:border-[#ef4343] focus:ring-[#ef4343]' : 'border-gray-200 focus:border-[#006fcf] focus:ring-[#006fcf]'
+                error ? 'border-[#ef4343] focus:border-[#ef4343] focus:ring-[#ef4343]' : 'border-gray-200 focus:border-[#015299] focus:ring-[#015299]'
               }`}
             />
             {error && (

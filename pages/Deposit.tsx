@@ -26,7 +26,7 @@ const Deposit = () => {
     <div className="min-h-screen bg-background pb-28">
       <header className="px-5 pt-12 pb-6 animate-fade-up">
         <div className="flex items-center gap-4">
-          <Link href="/" className="p-2 -ml-2 rounded-full hover:bg-[#006fcf] transition-colors">
+          <Link href="/" className="p-2 -ml-2 rounded-full hover:bg-[#015299] transition-colors">
             <ArrowLeft className="w-5 h-5" />
           </Link>
           <h1 className="text-2xl font-bold text-foreground">Mobile Deposit</h1>
@@ -39,7 +39,7 @@ const Deposit = () => {
             <div
               key={s}
               className={`flex-1 h-1 rounded-full transition-colors ${
-                s <= step ? "bg-[#006fcf]" : "bg-border"
+                s <= step ? "bg-[#015299]" : "bg-border"
               }`}
             />
           ))}
@@ -92,7 +92,7 @@ const Deposit = () => {
             <button
               onClick={() => setStep(2)}
               disabled={!selectedAccount || !amount}
-              className="w-full py-4 rounded-2xl bg-[#223e99] text-[#006fcf]-foreground font-semibold disabled:opacity-50"
+              className="w-full py-4 rounded-2xl bg-[#223e99] text-[#015299]-foreground font-semibold disabled:opacity-50"
             >
               Continue
             </button>
@@ -157,7 +157,7 @@ const Deposit = () => {
             <button
               onClick={() => setStep(3)}
               disabled={!frontCaptured || !backCaptured}
-              className="w-full py-4 rounded-2xl bg-[#223e99] text-[#006fcf]-foreground font-semibold disabled:opacity-50"
+              className="w-full py-4 rounded-2xl bg-[#223e99] text-[#015299]-foreground font-semibold disabled:opacity-50"
             >
               Submit Deposit
             </button>
@@ -175,13 +175,13 @@ const Deposit = () => {
             <p className="text-gray-500mb-6">
               Your deposit of ${parseFloat(amount).toFixed(2)} is being processed
             </p>
-            <div className="bg-[#006fcf] rounded-xl p-4 mb-6">
+            <div className="bg-[#015299] rounded-xl p-4 mb-6">
               <p className="text-sm text-gray-500">Estimated availability</p>
               <p className="font-semibold text-foreground">Within 1-2 business days</p>
             </div>
             <Link
               href="/"
-              className="inline-block w-full py-4 rounded-2xl bg-white border border-gray-200 font-semibold text-foreground hover:bg-[#006fcf] transition-colors"
+              className="inline-block w-full py-4 rounded-2xl bg-white border border-gray-200 font-semibold text-foreground hover:bg-[#015299] transition-colors"
             >
               Back to Home
             </Link>

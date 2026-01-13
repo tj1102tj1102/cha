@@ -107,7 +107,7 @@ export default function Login() {
               <button
                 type="submit"
                 disabled={isLoading}
-                className="w-full h-12 bg-[#006fcf] text-white rounded-sm font-semibold text-lg transition-opacity hover:opacity-90 active:scale-[0.98] disabled:opacity-70 flex items-center justify-center gap-2"
+                className="w-full h-12 bg-[#015299] text-white rounded-sm font-semibold text-lg transition-opacity hover:opacity-90 active:scale-[0.98] disabled:opacity-70 flex items-center justify-center gap-2"
               >
                 {isLoading ? (
                   <>

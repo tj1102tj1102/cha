@@ -93,7 +93,7 @@ export default function More() {
         <div className="flex items-center gap-4">
           <Link
             href="/"
-            className="p-2 -ml-2 rounded-full hover:bg-[#006fcf] transition-colors"
+            className="p-2 -ml-2 rounded-full hover:bg-[#015299] transition-colors"
           >
             <ArrowLeft className="w-5 h-5" />
           </Link>
@@ -104,7 +104,7 @@ export default function More() {
       {/* User Info */}
       <section className="px-5 mb-6 animate-fade-up stagger-1">
         <div className="banking-card flex items-center gap-4">
-          <div className="w-16 h-16 rounded-full bg-[#223e99] flex items-center justify-center text-[#006fcf]-foreground text-2xl font-bold">
+          <div className="w-16 h-16 rounded-full bg-[#223e99] flex items-center justify-center text-[#015299]-foreground text-2xl font-bold">
             {user?.firstName?.charAt(0) || "U"}
           </div>
           <div className="flex-1">
@@ -136,9 +136,9 @@ export default function More() {
                   <Link
                     key={item.label}
                     href={item.path}
-                    className="w-full flex items-center gap-4 p-4 hover:bg-[#006fcf]/50 transition-colors text-left"
+                    className="w-full flex items-center gap-4 p-4 hover:bg-[#015299]/50 transition-colors text-left"
                   >
-                    <div className="p-2.5 rounded-xl bg-[#006fcf]">
+                    <div className="p-2.5 rounded-xl bg-[#015299]">
                       <item.icon className="w-5 h-5 text-foreground" />
                     </div>
                     <div className="flex-1">
@@ -156,12 +156,12 @@ export default function More() {
                 return (
                   <button
                     key={item.label}
-                    className="w-full flex items-center gap-4 p-4 hover:bg-[#006fcf]/50 transition-colors text-left"
+                    className="w-full flex items-center gap-4 p-4 hover:bg-[#015299]/50 transition-colors text-left"
                     onClick={() => {
                       /* handle button action */
                     }}
                   >
-                    <div className="p-2.5 rounded-xl bg-[#006fcf]">
+                    <div className="p-2.5 rounded-xl bg-[#015299]">
                       <item.icon className="w-5 h-5 text-foreground" />
                     </div>
                     <div className="flex-1">

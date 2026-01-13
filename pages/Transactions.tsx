@@ -55,7 +55,7 @@ const Transactions = () => {
     <div className="min-h-screen bg-background pb-28">
       <header className="px-5 pt-5 pb-4 animate-fade-up">
         <div className="flex items-center gap-4 mb-4">
-          <Link href="/" className="p-2 -ml-2 rounded-full hover:bg-[#006fcf] transition-colors">
+          <Link href="/" className="p-2 -ml-2 rounded-full hover:bg-[#015299] transition-colors">
             <ArrowLeft className="w-5 h-5" />
           </Link>
           <h1 className="text-2xl font-bold text-foreground">All Transactions</h1>
@@ -78,7 +78,7 @@ const Transactions = () => {
               key={status}
               onClick={() => setFilterStatus(status)}
               className={`px-4 py-2 rounded-full text-sm font-medium whitespace-nowrap transition-all ${
-                filterStatus === status ? 'bg-[#006fcf] text-white' : 'bg-white border border-gray-200 text-foreground hover:bg-[#006fcf]'
+                filterStatus === status ? 'bg-[#015299] text-white' : 'bg-white border border-gray-200 text-foreground hover:bg-[#015299]'
               }`}
             >
               {status === 'all' ? 'All' : statusConfig[status].label}
@@ -94,10 +94,10 @@ const Transactions = () => {
           ) : (
             filteredTransactions.map(tx => {
               const Icon = isCredit(tx.amount) ? ArrowDownLeft : ArrowUpRight;
-              const iconBg = isCredit(tx.amount) ? 'bg-[#006fcf]/10 text-[#006fcf]' : 'bg-[#ef4343]/10 text-[#ef4343]';
+              const iconBg = isCredit(tx.amount) ? 'bg-[#015299]/10 text-[#015299]' : 'bg-[#ef4343]/10 text-[#ef4343]';
               const status = statusConfig[tx.status];
               return (
-                <div key={tx.id} className="flex items-center gap-3 py-3 border-b border-gray-200/50 last:border-0 hover:bg-[#006fcf]/30 -mx-2 px-2 rounded-lg transition-colors cursor-pointer">
+                <div key={tx.id} className="flex items-center gap-3 py-3 border-b border-gray-200/50 last:border-0 hover:bg-[#015299]/30 -mx-2 px-2 rounded-lg transition-colors cursor-pointer">
                   <div className={`p-2.5 rounded-xl ${iconBg}`}>
                     <Icon className="w-5 h-5" />
                   </div>

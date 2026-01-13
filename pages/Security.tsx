@@ -18,7 +18,7 @@ const Security = () => {
     <div className="min-h-screen bg-background pb-28">
       <header className="px-5 pt-12 pb-6 animate-fade-up">
         <div className="flex items-center gap-4">
-          <Link href="/more" className="p-2 -ml-2 rounded-full hover:bg-[#006fcf] transition-colors">
+          <Link href="/more" className="p-2 -ml-2 rounded-full hover:bg-[#015299] transition-colors">
             <ArrowLeft className="w-5 h-5" />
           </Link>
           <h1 className="text-2xl font-bold text-foreground">Security</h1>
@@ -26,7 +26,7 @@ const Security = () => {
       </header>
 
       <section className="px-5 mb-6 animate-fade-up stagger-1">
-        <div className="banking-card bg-[#223e99] text-[#006fcf]-foreground">
+        <div className="banking-card bg-[#223e99] text-[#015299]-foreground">
           <div className="flex items-center gap-3 mb-4">
             <Shield className="w-6 h-6" />
             <span className="font-semibold">Security Score</span>
@@ -44,7 +44,7 @@ const Security = () => {
         <div className="banking-card p-0! overflow-hidden divide-y divide-border">
           <div className="flex items-center justify-between p-4">
             <div className="flex items-center gap-4">
-              <div className="p-2.5 rounded-xl bg-[#006fcf]">
+              <div className="p-2.5 rounded-xl bg-[#015299]">
                 <Fingerprint className="w-5 h-5 text-foreground" />
               </div>
               <div>
@@ -55,7 +55,7 @@ const Security = () => {
             <button
               onClick={() => setBiometricsEnabled(!biometricsEnabled)}
               className={`relative w-12 h-7 rounded-full transition-colors ${
-                biometricsEnabled ? "bg-[#006fcf]" : "bg-[#006fcf]"
+                biometricsEnabled ? "bg-[#015299]" : "bg-[#015299]"
               }`}
             >
               <div
@@ -68,7 +68,7 @@ const Security = () => {
 
           <div className="flex items-center justify-between p-4">
             <div className="flex items-center gap-4">
-              <div className="p-2.5 rounded-xl bg-[#006fcf]">
+              <div className="p-2.5 rounded-xl bg-[#015299]">
                 <Smartphone className="w-5 h-5 text-foreground" />
               </div>
               <div>
@@ -79,7 +79,7 @@ const Security = () => {
             <button
               onClick={() => setTwoFactorEnabled(!twoFactorEnabled)}
               className={`relative w-12 h-7 rounded-full transition-colors ${
-                twoFactorEnabled ? "bg-[#006fcf]" : "bg-[#006fcf]"
+                twoFactorEnabled ? "bg-[#015299]" : "bg-[#015299]"
               }`}
             >
               <div
@@ -90,9 +90,9 @@ const Security = () => {
             </button>
           </div>
 
-          <button className="w-full flex items-center justify-between p-4 hover:bg-[#006fcf]/50 transition-colors">
+          <button className="w-full flex items-center justify-between p-4 hover:bg-[#015299]/50 transition-colors">
             <div className="flex items-center gap-4">
-              <div className="p-2.5 rounded-xl bg-[#006fcf]">
+              <div className="p-2.5 rounded-xl bg-[#015299]">
                 <Key className="w-5 h-5 text-foreground" />
               </div>
               <div className="text-left">
@@ -103,9 +103,9 @@ const Security = () => {
             <ChevronRight className="w-5 h-5 text-gray-500" />
           </button>
 
-          <button className="w-full flex items-center justify-between p-4 hover:bg-[#006fcf]/50 transition-colors">
+          <button className="w-full flex items-center justify-between p-4 hover:bg-[#015299]/50 transition-colors">
             <div className="flex items-center gap-4">
-              <div className="p-2.5 rounded-xl bg-[#006fcf]">
+              <div className="p-2.5 rounded-xl bg-[#015299]">
                 <Lock className="w-5 h-5 text-foreground" />
               </div>
               <div className="text-left">
@@ -121,12 +121,12 @@ const Security = () => {
       <section className="px-5 mb-6 animate-fade-up stagger-3">
         <div className="flex items-center justify-between mb-3">
           <h2 className="text-sm font-medium text-gray-500">Active Devices</h2>
-          <button className="text-sm text-[#006fcf] font-medium">Manage</button>
+          <button className="text-sm text-[#015299] font-medium">Manage</button>
         </div>
         <div className="space-y-3">
           {devices.map((device) => (
             <div key={device.id} className="banking-card flex items-center gap-4">
-              <div className="p-2.5 rounded-xl bg-[#006fcf]">
+              <div className="p-2.5 rounded-xl bg-[#015299]">
                 <Smartphone className="w-5 h-5 text-foreground" />
               </div>
               <div className="flex-1">

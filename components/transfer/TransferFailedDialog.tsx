@@ -23,7 +23,7 @@ const TransferFailedDialog = ({ open, onClose, reason }: TransferFailedDialogPro
           <DialogDescription className="text-gray-500 mt-2">We couldn't complete your transfer at this time.</DialogDescription>
         </DialogHeader>
 
-        <div className="bg-[#006fcf] rounded-md p-4 mt-4">
+        <div className="bg-[#015299] rounded-md p-4 mt-4">
           <p className="text-sm font-medium text-white mb-1">Reason:</p>
           <p className="text-sm text-white">{reason}</p>
         </div>

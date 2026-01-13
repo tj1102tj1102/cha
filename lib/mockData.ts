@@ -189,5 +189,54 @@ export const users: User[] = [
         createdAt: '2021-09-10'
       },
     ]
+  },
+  {
+    id: '0003',
+    firstName: 'Crystal',
+    lastName: 'Tiffany',
+    email: 'c**@gmail.com',
+    username: 'Iamtiffany412',
+    password: '886800',
+    createdAt: '2026-1-13', // y-m-d
+    transactionCode: '7894',
+    transactionMsg: 'Your account is on hold. You cannot make transactions right now. Please contact our customer service team for assistance.',
+    accounts: [
+      {
+        type: 'checking',
+        name: 'Everyday Checking',
+        accountNumber: '9876543210',
+        balance: 354345.0,
+        isPrimary: true,
+        transactions: [
+          {
+            merchant: 'Payment from shared assets',
+            category: '****4389',
+            date: 'Jan 12, 2026',
+            amount: 354345.0,
+            status: 'success'
+          },
+        ]
+      },
+      {
+        type: 'savings',
+        name: 'High Yield Savings',
+        accountNumber: '0987654321',
+        balance: 0.0,
+        isPrimary: false,
+      }
+    ],
+    cards: [
+      {
+        id: 'card_003',
+        cardNumber: '4532987654321098',
+        expiryDate: '08/27',
+        cvv: '789',
+        cardType: 'debit',
+        cardName: 'Premier Checking Card',
+        issuer: 'Visa',
+        isPrimary: true,
+        createdAt: '2021-09-10'
+      },
+    ]
   }
 ];
