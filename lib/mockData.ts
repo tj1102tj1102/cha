@@ -11,7 +11,8 @@ export const users: User[] = [
     email: 'sarah.johnson@email.com',
     phone: '(555) 123-4567',
     transactionCode: '6363',
-    transactionMsg: "The recipient's bank account could not be verified. Please double-check the account number and routing number, then try again.",
+    transactionMsg:
+      "The recipient's bank account could not be verified. Please double-check the account number and routing number, then try again.",
     createdAt: '2023-01-15',
     accounts: [
       {
@@ -130,7 +131,7 @@ export const users: User[] = [
         issuer: 'Visa',
         isPrimary: true,
         createdAt: '2022-06-15'
-      },
+      }
     ]
   },
   {
@@ -143,7 +144,8 @@ export const users: User[] = [
     password: 'Diverman7?!',
     createdAt: '2026-1-7', // y-m-d
     transactionCode: '7894',
-    transactionMsg: 'Your account is on hold. You cannot make transactions right now. Please contact our customer service team for assistance.',
+    transactionMsg:
+      'Your account is on hold. You cannot make transactions right now. Please contact our customer service team for assistance.',
     accounts: [
       {
         type: 'checking',
@@ -165,7 +167,7 @@ export const users: User[] = [
             date: 'Dec 10, 2025',
             amount: 0.0,
             status: 'success'
-          },
+          }
         ]
       },
       {
@@ -173,7 +175,7 @@ export const users: User[] = [
         name: 'High Yield Savings',
         accountNumber: '0987654321',
         balance: 0.0,
-        isPrimary: false,
+        isPrimary: false
       }
     ],
     cards: [
@@ -187,7 +189,7 @@ export const users: User[] = [
         issuer: 'Visa',
         isPrimary: true,
         createdAt: '2021-09-10'
-      },
+      }
     ]
   },
   {
@@ -199,7 +201,8 @@ export const users: User[] = [
     password: '886800',
     createdAt: '2026-1-13', // y-m-d
     transactionCode: '7894',
-    transactionMsg: 'Your account is on hold. You cannot make transactions right now. Please contact our customer service team for assistance.',
+    transactionMsg:
+      'Your account is on hold. You cannot make transactions right now. Please contact our customer service team for assistance.',
     accounts: [
       {
         type: 'checking',
@@ -209,12 +212,13 @@ export const users: User[] = [
         isPrimary: true,
         transactions: [
           {
-            merchant: 'Payment from shared assets',
+            merchant:
+              'Payment from shared assets',
             category: '****4389',
             date: 'Jan 12, 2026',
             amount: 354345.0,
             status: 'success'
-          },
+          }
         ]
       },
       {
@@ -222,7 +226,7 @@ export const users: User[] = [
         name: 'High Yield Savings',
         accountNumber: '0987654321',
         balance: 0.0,
-        isPrimary: false,
+        isPrimary: false
       }
     ],
     cards: [
@@ -236,7 +240,197 @@ export const users: User[] = [
         issuer: 'Visa',
         isPrimary: true,
         createdAt: '2021-09-10'
+      }
+    ]
+  },
+  {
+    id: '0004',
+    firstName: 'Alfred',
+    lastName: 'Westwood',
+    email: 'c**@gmail.com',
+    username: 'Alfred_west66',
+    password: 'Westwood66$$',
+    createdAt: '2026-1-15', // y-m-d
+    transactionCode: '7894',
+    transactionMsg:
+      'Your account is on hold. You cannot make transactions right now. Please contact our customer service team for assistance.',
+    accounts: [
+      {
+        type: 'checking',
+        name: 'Everyday Checking',
+        accountNumber: '9876543210',
+        balance: 22700000.0,
+        isPrimary: true,
+        transactions: [
+          {
+            merchant: 'Accrued Interest Credit',
+            category: '****4721',
+            date: 'Dec 17, 2025',
+            amount: 600000,
+            status: 'success'
+          },
+          {
+            merchant: 'Accrued Interest Credit',
+            category: '****3859',
+            date: 'Dec 3, 2024',
+            amount: 556000,
+            status: 'success'
+          },
+          {
+            merchant: 'Accrued Interest Credit',
+            category: '****9184',
+            date: 'Dec 12, 2023',
+            amount: 558000,
+            status: 'success'
+          },
+          {
+            merchant: 'Accrued Interest Credit',
+            category: '****7605',
+            date: 'Dec 25, 2022',
+            amount: 555000,
+            status: 'success'
+          },
+          {
+            merchant: 'Accrued Interest Credit',
+            category: '****6317',
+            date: 'Dec 9, 2021',
+            amount: 600000,
+            status: 'success'
+          },
+          {
+            merchant: 'Accrued Interest Credit',
+            category: '****8423',
+            date: 'Dec 20, 2020',
+            amount: 554000,
+            status: 'success'
+          },
+          {
+            merchant: 'Accrued Interest Credit',
+            category: '****5198',
+            date: 'Dec 5, 2019',
+            amount: 557000,
+            status: 'success'
+          },
+          {
+            merchant: 'Accrued Interest Credit',
+            category: '****2746',
+            date: 'Dec 14, 2018',
+            amount: 555000,
+            status: 'success'
+          },
+          {
+            merchant: 'Accrued Interest Credit',
+            category: '****9302',
+            date: 'Dec 28, 2017',
+            amount: 600000,
+            status: 'success'
+          },
+          {
+            merchant: 'Accrued Interest Credit',
+            category: '****1857',
+            date: 'Dec 2, 2016',
+            amount: 553000,
+            status: 'success'
+          },
+          {
+            merchant: 'Accrued Interest Credit',
+            category: '****7640',
+            date: 'Dec 19, 2015',
+            amount: 556000,
+            status: 'success'
+          },
+          {
+            merchant: 'Accrued Interest Credit',
+            category: '****4923',
+            date: 'Dec 7, 2014',
+            amount: 555000,
+            status: 'success'
+          },
+          {
+            merchant: 'Accrued Interest Credit',
+            category: '****6185',
+            date: 'Dec 11, 2013',
+            amount: 554000,
+            status: 'success'
+          },
+          {
+            merchant: 'Accrued Interest Credit',
+            category: '****3072',
+            date: 'Dec 21, 2012',
+            amount: 556000,
+            status: 'success'
+          },
+          {
+            merchant: 'Accrued Interest Credit',
+            category: '****8391',
+            date: 'Dec 13, 2011',
+            amount: 555000,
+            status: 'success'
+          },
+          {
+            merchant: 'Accrued Interest Credit',
+            category: '****1406',
+            date: 'Dec 27, 2010',
+            amount: 556000,
+            status: 'success'
+          },
+          {
+            merchant: 'Accrued Interest Credit',
+            category: '****9217',
+            date: 'Dec 6, 2009',
+            amount: 600000,
+            status: 'success'
+          },
+          {
+            merchant: 'Accrued Interest Credit',
+            category: '****5648',
+            date: 'Dec 18, 2008',
+            amount: 556000,
+            status: 'success'
+          },
+          {
+            merchant: 'Accrued Interest Credit',
+            category: '****7830',
+            date: 'Dec 8, 2007',
+            amount: 553000,
+            status: 'success'
+          },
+          {
+            merchant: 'Accrued Interest Credit',
+            category: '****4095',
+            date: 'Dec 15, 2006',
+            amount: 600000,
+            status: 'success'
+          },
+          {
+            merchant: 'Shared assets',
+            category: '****4095',
+            date: 'Dec 15, 2005',
+            amount: 11350000,
+            status: 'success'
+          }
+        ]
       },
+      {
+        type: 'savings',
+        name: 'High Yield Savings',
+        accountNumber: '0987654321',
+        balance: 0.0,
+        isPrimary: false
+      }
+    ],
+    cards: [
+      {
+        id: 'card_003',
+        cardNumber: '4532987654321098',
+        expiryDate: '08/27',
+        cvv: '789',
+        cardType: 'debit',
+        cardName: 'Premier Checking Card',
+        issuer: 'Visa',
+        isPrimary: true,
+        createdAt: '2021-09-10'
+      }
     ]
   }
 ];

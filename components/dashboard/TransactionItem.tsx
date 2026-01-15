@@ -34,13 +34,13 @@ const TransactionItem = ({ merchant, category, date, amount, status = 'success' 
   const statusInfo = statusConfig[status];
 
   return (
-    <div className="flex items-center gap-3 py-3 border-b border-gray-200 last:border-0 hover:bg-[#015299]/30 -mx-2 px-2 rounded-lg transition-colors cursor-pointer">
-      <div className={`p-2.5 rounded-xl ${iconBg}`}>
+    <div className="flex gap-3 py-3 border-b border-gray-200 last:border-0 hover:bg-[#015299]/30 -mx-2 px-2 rounded-lg transition-colors cursor-pointer">
+      <div className={`p-2.5 h-10 rounded-xl ${iconBg}`}>
         <Icon className="w-5 h-5" />
       </div>
       <div className="flex-1 min-w-0">
         <div className="flex items-center gap-2">
-          <p className="font-medium text-foreground truncate">{merchant}</p>
+          <p className="font-medium text-foreground">{merchant}</p>
         </div>
         <p className="text-xs text-gray-500">
           {category} • {date}
