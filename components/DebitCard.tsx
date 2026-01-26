@@ -52,7 +52,7 @@ const DebitCard = ({ cardNumber = '**** **** **** 7890', cardHolder = 'JAMES AND
         </div>
 
         {/* Contactless Icon */}
-        <div className="text-white-muted hidden">
+        <div className="text-white-muted">
           <Wifi className="w-8 h-8 text-white rotate-90" strokeWidth={1.5} />
         </div>
       </div>
