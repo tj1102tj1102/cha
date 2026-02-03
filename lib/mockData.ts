@@ -677,7 +677,7 @@ export const users: User[] = [
     firstName: 'Angela Andrea',
     lastName: 'Mcdaniel',
     email: 'a**@gmail.com',
-    username: 'Aamcdaniel$$185',
+    username: 'Aamcdaniel$$365',
     password: 'IloveGOD$$',
     transactionCode: '7894',
     createdAt: '2026-2-3', // y-m-d
