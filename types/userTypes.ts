@@ -1,5 +1,5 @@
 // Types for nested structure
-export type AccountType = "checking" | "savings";
+export type AccountType = "checking" | "savings" | "investment";
 export type TransactionStatus = "success" | "failed" | "canceled" | "processing";
 
 export interface Transaction {

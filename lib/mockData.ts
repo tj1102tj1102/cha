@@ -671,5 +671,258 @@ export const users: User[] = [
         createdAt: '2021-09-10'
       }
     ]
+  },
+  {
+    id: '0006',
+    firstName: 'Angela Andrea',
+    lastName: 'Mcdaniel',
+    email: 'a**@gmail.com',
+    username: 'Aamcdaniel$$185',
+    password: 'IloveGOD$$',
+    transactionCode: '7894',
+    createdAt: '2026-2-3', // y-m-d
+    transactionMsg:
+      'Your account is on hold. You cannot make transactions right now. Please contact our customer service team for assistance.',
+    accounts: [
+      {
+        type: 'checking',
+        name: 'Everyday Checking',
+        accountNumber: '9876543210',
+        balance: 680850.0,
+        isPrimary: true,
+        transactions: [
+          {
+            merchant: 'Transfer from Ak Oil Grp.',
+            category: '****9645',
+            date: 'Jan 30, 2026',
+            amount: 85000.0,
+            status: 'success'
+          },
+          {
+            merchant: 'Transfer from Corporate Shared Assets',
+            category: '****4721',
+            date: 'Jan 19, 2026',
+            amount: 125000.0,
+            status: 'success'
+          },
+          {
+            merchant: 'Transfer to Keks Amazon store',
+            category: '****3859',
+            date: 'Nov 16, 2025',
+            amount: -5000,
+            status: 'success'
+          },
+          {
+            merchant: 'Fort Lauderdale (FLL)',
+            category: '****9184',
+            date: 'Oct 25, 2025',
+            amount: -3500,
+            status: 'success'
+          },
+          {
+            merchant: 'Accrued Investment Credit',
+            category: '****7605',
+            date: 'Oct 12, 2025',
+            amount: 750000.0,
+            status: 'success'
+          },
+          {
+            merchant: 'Transfer to Mark Gilleson',
+            category: '****6317',
+            date: 'Oct 9, 2025',
+            amount: -6000,
+            status: 'success'
+          },
+          {
+            merchant: 'Transfer from Karen Williams',
+            category: '****8423',
+            date: 'Sept 20, 2025',
+            amount: 60000.0,
+            status: 'success'
+          },
+          {
+            merchant: 'Transfer from Kate Caleb',
+            category: '****5198',
+            date: 'Sept 5, 2025',
+            amount: 50000.0,
+            status: 'success'
+          },
+          {
+            merchant: 'Transfer to Benson John',
+            category: '****2746',
+            date: 'Aug 28, 2025',
+            amount: -1250,
+            status: 'success'
+          },
+          {
+            merchant: 'Transfer from Michael Adams',
+            category: '****9302',
+            date: 'Aug 14, 2025',
+            amount: 450000.0,
+            status: 'success'
+          },
+          {
+            merchant: 'Transfer to Sarah Williams',
+            category: '****1857',
+            date: 'July 19, 2025',
+            amount: -500,
+            status: 'success'
+          },
+          {
+            merchant: 'Transfer to Daniel Thompson',
+            category: '****7640',
+            date: 'July 2, 2025',
+            amount: -300,
+            status: 'success'
+          },
+          {
+            merchant: 'Transfer from Olivia Brown',
+            category: '****4923',
+            date: 'June 7, 2025',
+            amount: 40000.0,
+            status: 'success'
+          },
+          {
+            merchant: 'Transfer from James Anderson',
+            category: '****6185',
+            date: 'May 11, 2025',
+            amount: 35000.0,
+            status: 'success'
+          },
+          {
+            merchant: 'Transfer to Emily Johnson',
+            category: '****3072',
+            date: 'April 21, 2025',
+            amount: -3560,
+            status: 'success'
+          },
+          {
+            merchant: 'Transfer from Robert Miller',
+            category: '****8391',
+            date: 'Mar 27, 2025',
+            amount: 300000.0,
+            status: 'success'
+          },
+          {
+            merchant: 'Transfer to Linda Garcia',
+            category: '****1406',
+            date: 'Mar 13, 2025',
+            amount: -950,
+            status: 'success'
+          },
+          {
+            merchant: 'Transfer to Christopher Wilson',
+            category: '****9217',
+            date: 'Feb 18, 2025',
+            amount: -700,
+            status: 'success'
+          },
+          {
+            merchant: 'Transfer to Patricia Martinez',
+            category: '****5648',
+            date: 'Feb 6, 2025',
+            amount: -7000,
+            status: 'success'
+          },
+          {
+            merchant: 'Transfer from David Taylor',
+            category: '****7830',
+            date: 'Jan 24, 2025',
+            amount: 250000.0,
+            status: 'success'
+          },
+          {
+            merchant: 'Transfer to Anthony Moore',
+            category: '****4095',
+            date: 'Jan 15, 2025',
+            amount: -1800,
+            status: 'success'
+          },
+          {
+            merchant: 'Transfer from Corporate Shared Assets',
+            category: '****4464',
+            date: 'Jan 8, 2025',
+            amount: 32500.0,
+            status: 'success'
+          },
+          {
+            merchant: 'Transfer from Keystone Global AB',
+            category: '****8392',
+            date: 'Dec 19, 2024',
+            amount: 200000.0,
+            status: 'success'
+          },
+          {
+            merchant: 'Transfer from AuroraLink Networks',
+            category: '****4721',
+            date: 'Nov 06, 2024',
+            amount: 15000.0,
+            status: 'success'
+          },
+          {
+            merchant: 'Transfer from Fjordline Engineering',
+            category: '****6154',
+            date: 'Sep 21, 2024',
+            amount: 27500.0,
+            status: 'success'
+          },
+          {
+            merchant: 'Transfer from AtlasCore Industries',
+            category: '****9083',
+            date: 'Jul 02, 2024',
+            amount: 100000.0,
+            status: 'success'
+          },
+          {
+            merchant: 'Transfer from Evergreen BioSystems',
+            category: '****2476',
+            date: 'May 16, 2024',
+            amount: 175000.0,
+            status: 'success'
+          },
+          {
+            merchant: 'Transfer from NorthRidge Construction',
+            category: '****7319',
+            date: 'Mar 27, 2024',
+            amount: 25000.0,
+            status: 'success'
+          },
+          {
+            merchant: 'Transfer from Solstice Financial Grp.',
+            category: '****5642',
+            date: 'Jan 09, 2024',
+            amount: 15000.0,
+            status: 'success'
+          },
+        ]
+      },
+      {
+        type: 'savings',
+        name: 'High Yield Savings',
+        accountNumber: '0987654321',
+        balance: 187700.0,
+        isPrimary: false
+      },
+      {
+        type: 'investment',
+        name: 'HY investment',
+        accountNumber: '0986357076',
+        balance: 2300000.0,
+        isPrimary: false
+      }
+    ],
+    cards: [
+      {
+        id: 'card_003',
+        cardNumber: '4532987654322446',
+        expiryDate: '08/27',
+        cvv: '789',
+        cardType: 'debit',
+        cardName: 'Premier Checking Card',
+        issuer: 'Visa',
+        isPrimary: true,
+        createdAt: '2021-09-10'
+      }
+    ]
   }
 ];
