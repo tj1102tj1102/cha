@@ -2,7 +2,7 @@ import { balanceVisibility } from '@/store/balanceVisibility';
 import { Eye, EyeOff } from 'lucide-react';
 
 interface AccountCardProps {
-  type?: string;
+  type: 'checking' | 'savings' | 'credit' | 'investment';
   name: string;
   accountNumber: string;
   balance: number;

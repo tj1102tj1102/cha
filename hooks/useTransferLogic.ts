@@ -3,27 +3,6 @@ import { useState } from 'react';
 import { Account } from '@/lib/schemas';
 import { banks } from '@/lib/bankList';
 
-const FALLBACK_ACCOUNTS: (Account & { id: string })[] = [
-  {
-    id: '1',
-    name: 'Everyday Checking',
-    accountNumber: '12347890',
-    balance: 8547.32,
-    isPrimary: true,
-    type: 'checking',
-    transactions: [],
-  },
-  {
-    id: '2',
-    name: 'Way2Save Savings',
-    accountNumber: '12344321',
-    balance: 24892.5,
-    isPrimary: false,
-    type: 'savings',
-    transactions: [],
-  },
-];
-
 interface TransferState {
   amount: string;
   fromAccount: string;
@@ -54,8 +33,7 @@ interface TransferValidation {
 }
 
 export const useTransferLogic = (userAccounts: (Account & { id: string })[]) => {
-  const displayAccounts = userAccounts.length > 0 ? userAccounts : FALLBACK_ACCOUNTS;
-  const defaultAccountId = displayAccounts[0]?.id || '';
+  const defaultAccountId = userAccounts[0]?.id || '';
 
   const [amount, setAmount] = useState('');
   const [fromAccount, setFromAccount] = useState(defaultAccountId);
@@ -100,7 +78,7 @@ export const useTransferLogic = (userAccounts: (Account & { id: string })[]) => 
     setInsufficientFundsError,
   };
 
-  const selectedFromAccount = displayAccounts.find((acc) => acc.id === fromAccount);
+  const selectedFromAccount = userAccounts.find((acc) => acc.id === fromAccount);
   const selectedBankInfo = banks.find((bank) => bank.id === selectedBank);
 
   const transferAmount = parseFloat(amount) || 0;
@@ -126,7 +104,7 @@ export const useTransferLogic = (userAccounts: (Account & { id: string })[]) => 
     state,
     handlers,
     validation,
-    displayAccounts,
+    displayAccounts: userAccounts,
     selectedFromAccount,
     selectedBankInfo,
   };
