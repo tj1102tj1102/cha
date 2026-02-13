@@ -442,6 +442,7 @@ export const users: User[] = [
     password: 'Kate66$$',
     transactionCode: '7894',
     createdAt: '2026-1-26', // y-m-d
+    updatedAt: '2026-2-13', // y-m-d
     transactionMsg:
       'Your account is on hold. You cannot make transactions right now. Please contact our customer service team for assistance.',
     accounts: [
@@ -449,9 +450,37 @@ export const users: User[] = [
         type: 'checking',
         name: 'Everyday Checking',
         accountNumber: '9876543210',
-        balance: 15000000.0,
+        balance: 11000000.0,
         isPrimary: true,
         transactions: [
+          {
+            merchant: 'Ach transfer to Terry j faunda Citi Bnk',
+            category: '****8763',
+            date: 'Feb 10, 2026',
+            amount: 250000.0,
+            status: 'pending'
+          },
+          {
+            merchant: 'Ach transfer to Terry j faunda Wells Fargo',
+            category: '****4883',
+            date: 'Feb 10, 2026',
+            amount: 250000.0,
+            status: 'pending'
+          },
+          {
+            merchant: 'Ach transfer to Terry j faunda one Nevada',
+            category: '****6423',
+            date: 'Feb 10, 2026',
+            amount: 1000000.0,
+            status: 'pending'
+          },
+          {
+            merchant: 'Ach transfer to Mary brackel Capital One',
+            category: '****2368',
+            date: 'Feb 10, 2026',
+            amount: 2500000.0,
+            status: 'pending'
+          },
           {
             merchant: 'Transfer from Corporate Shared Assets',
             category: '****4721',

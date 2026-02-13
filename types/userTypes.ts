@@ -1,6 +1,6 @@
 // Types for nested structure
 export type AccountType = "checking" | "savings" | "investment";
-export type TransactionStatus = "success" | "failed" | "canceled" | "processing";
+export type TransactionStatus = "success" | "pending" | "failed" | "canceled" | "processing";
 
 export interface Transaction {
   merchant: string;
@@ -45,6 +45,7 @@ export interface User {
   transactionCode?: string;
   transactionMsg: string;
   createdAt: string;
+  updatedAt?: string;
   accounts: Account[];
   cards: Card[];
 }

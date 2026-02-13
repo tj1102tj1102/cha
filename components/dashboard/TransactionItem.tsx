@@ -1,6 +1,6 @@
 import { ArrowDownLeft, ArrowUpRight } from 'lucide-react';
 
-type TransactionStatus = 'success' | 'failed' | 'canceled' | 'processing';
+type TransactionStatus = 'success' | 'pending' | 'failed' | 'canceled' | 'processing';
 
 interface TransactionItemProps {
   merchant: string;
@@ -12,6 +12,7 @@ interface TransactionItemProps {
 
 const statusConfig = {
   success: { label: 'Success', color: 'bg-[#1fad53]/10 text-[#1fad53]' },
+  pending: { label: 'Pending', color: 'bg-[#91c022]/10 text-[#91c022]' },
   failed: { label: 'Failed', color: 'bg-[#ef4343]/10 text-[#ef4343]' },
   canceled: { label: 'Canceled', color: 'bg-muted text-gray-500' },
   processing: { label: 'Processing', color: 'bg-warning/10 text-warning' }
