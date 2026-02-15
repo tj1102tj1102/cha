@@ -6,7 +6,7 @@ import {
   Home,
   CreditCard,
   ArrowLeftRight,
-  BarChart3,
+  History, // ✅ Added
   User
 } from "lucide-react";
 
@@ -14,7 +14,7 @@ const navItems = [
   { icon: Home, label: "Home", path: "/" },
   { icon: CreditCard, label: "Cards", path: "/cards" },
   { icon: ArrowLeftRight, label: "Transfer", path: "/transfer" },
-  // { icon: BarChart3, label: "Insights", path: "/insights" },
+  { icon: History, label: "Transactions", path: "/transactions" }, // ✅ Added
   { icon: User, label: "Profile", path: "/profile" },
 ];
 
@@ -42,10 +42,15 @@ export default function BottomNavigation() {
                   isActive ? "bg-[#015299]/10" : ""
                 }`}
               >
-                <item.icon className="w-5 h-5" strokeWidth={isActive ? 2.5 : 2} />
+                <item.icon
+                  className="w-5 h-5"
+                  strokeWidth={isActive ? 2.5 : 2}
+                />
               </div>
               <span
-                className={`text-xs ${isActive ? "font-semibold" : "font-medium"}`}
+                className={`text-xs ${
+                  isActive ? "font-semibold" : "font-medium"
+                }`}
               >
                 {item.label}
               </span>

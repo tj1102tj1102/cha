@@ -1,20 +1,36 @@
+// Transactions.tsx (updated)
 'use client';
 
-import { ArrowLeft, Search, ArrowDownLeft, ArrowUpRight } from 'lucide-react';
+import { ArrowLeft, Search } from 'lucide-react';
 import Link from 'next/link';
 import { useEffect, useState } from 'react';
 import BottomNavigation from '@/components/dashboard/BottomNavigation';
 import { useAuthStore } from '@/store/authStore';
 import { useRouter } from 'next/navigation';
+import { TransactionStatus } from '@/types/userTypes';
+import TransactionItem from '@/components/dashboard/TransactionItem';
 
-type TransactionStatus = 'success' | 'pending' | 'failed' | 'canceled' | 'processing';
-
-const statusConfig = {
-  success: { label: 'Success', color: 'bg-[#1fad53]/10 text-[#1fad53]' },
-  pending: { label: 'Pending', color: 'bg-[#91c022]/10 text-[#91c022]' },
-  failed: { label: 'Failed', color: 'bg-[#ef4343]/10 text-[#ef4343]' },
-  canceled: { label: 'Canceled', color: 'bg-muted text-gray-500' },
-  processing: { label: 'Processing', color: 'bg-warning/10 text-warning' }
+const statusConfig: Record<TransactionStatus, { label: string; color: string }> = {
+  success: {
+    label: 'Success',
+    color: 'bg-[#1fad53]/10 text-[#1fad53]'
+  },
+  pending: {
+    label: 'Pending',
+    color: 'bg-blue-500/10 text-blue-500'
+  },
+  failed: {
+    label: 'Failed',
+    color: 'bg-[#ef4343]/10 text-[#ef4343]'
+  },
+  canceled: {
+    label: 'Canceled',
+    color: 'bg-muted text-gray-500'
+  },
+  processing: {
+    label: 'Processing',
+    color: 'bg-warning/10 text-warning'
+  }
 };
 
 const Transactions = () => {
@@ -41,22 +57,17 @@ const Transactions = () => {
     return matchesSearch && matchesFilter;
   });
 
-  const formatCurrency = (value: number) => {
-    const formatted = new Intl.NumberFormat('en-US', {
-      style: 'currency',
-      currency: 'USD',
-      minimumFractionDigits: 2
-    }).format(Math.abs(value));
-    return value >= 0 ? `+${formatted}` : `-${formatted}`;
+  const handleTransactionClick = (transactionId: string) => {
+    // You can add navigation or modal here
+    console.log('Clicked transaction:', transactionId);
+    // router.push(`/transaction/${transactionId}`);
   };
-
-  const isCredit = (amount: number) => amount >= 0;
 
   return (
     <div className="min-h-screen bg-background pb-28">
       <header className="px-5 pt-5 pb-4 animate-fade-up">
         <div className="flex items-center gap-4 mb-4">
-          <Link href="/" className="p-2 -ml-2 rounded-full hover:bg-[#015299] transition-colors">
+          <Link href="/" className="p-2 -ml-2 rounded-full hover:bg-[#b40520] transition-colors">
             <ArrowLeft className="w-5 h-5" />
           </Link>
           <h1 className="text-2xl font-bold text-foreground">All Transactions</h1>
@@ -79,7 +90,7 @@ const Transactions = () => {
               key={status}
               onClick={() => setFilterStatus(status)}
               className={`px-4 py-2 rounded-full text-sm font-medium whitespace-nowrap transition-all ${
-                filterStatus === status ? 'bg-[#015299] text-white' : 'bg-white border border-gray-200 text-foreground hover:bg-[#015299]'
+                filterStatus === status ? 'bg-[#b40520] text-white' : 'bg-white border border-gray-200 text-foreground hover:bg-[#b40520]'
               }`}
             >
               {status === 'all' ? 'All' : statusConfig[status].label}
@@ -93,30 +104,18 @@ const Transactions = () => {
           {filteredTransactions.length === 0 ? (
             <div className="py-8 text-center text-gray-500">No transactions found</div>
           ) : (
-            filteredTransactions.map(tx => {
-              const Icon = isCredit(tx.amount) ? ArrowDownLeft : ArrowUpRight;
-              const iconBg = isCredit(tx.amount) ? 'bg-[#015299]/10 text-[#015299]' : 'bg-[#ef4343]/10 text-[#ef4343]';
-              const status = statusConfig[tx.status];
-              return (
-                <div key={tx.id} className="flex gap-3 py-3 border-b border-gray-200/50 last:border-0 hover:bg-[#015299]/30 -mx-2 px-2 rounded-lg transition-colors cursor-pointer">
-                  <div className={`p-2.5 h-10 rounded-xl ${iconBg}`}>
-                    <Icon className="w-5 h-5" />
-                  </div>
-                  <div className="flex-1 min-w-0">
-                    <div className="flex items-center gap-2">
-                      <p className="font-medium text-foreground">{tx.merchant}</p>
-                    </div>
-                    <p className="text-xs text-gray-500">
-                      {tx.category} • {tx.date}
-                    </p>
-                  </div>
-                  <div className="flex flex-col items-end gap-1">
-                    <p className={`font-semibold text-sm ${isCredit(tx.amount) ? 'text-[#1fad53]' : 'text-foreground'}`}>{formatCurrency(tx.amount)}</p>
-                    <span className={`text-xs px-2 py-0.5 rounded-full ${status.color}`}>{status.label}</span>
-                  </div>
-                </div>
-              );
-            })
+            filteredTransactions.map(tx => (
+              <TransactionItem
+                key={tx.id}
+                id={tx.id}
+                merchant={tx.merchant}
+                category={tx.category}
+                date={tx.date}
+                amount={tx.amount}
+                status={tx.status}
+                onClick={() => handleTransactionClick(tx.id)}
+              />
+            ))
           )}
         </div>
       </section>

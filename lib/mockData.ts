@@ -11,8 +11,7 @@ export const users: User[] = [
     email: 'sarah.johnson@email.com',
     phone: '(555) 123-4567',
     transactionCode: '6363',
-    transactionMsg:
-      "The recipient's bank account could not be verified. Please double-check the account number and routing number, then try again.",
+    transactionMsg: "The recipient's bank account could not be verified. Please double-check the account number and routing number, then try again.",
     createdAt: '2023-01-15',
     accounts: [
       {
@@ -144,8 +143,7 @@ export const users: User[] = [
     password: 'Diverman7?!',
     createdAt: '2026-1-7', // y-m-d
     transactionCode: '7894',
-    transactionMsg:
-      'Your account is on hold. You cannot make transactions right now. Please contact our customer service team for assistance.',
+    transactionMsg: 'Your account is on hold. You cannot make transactions right now. Please contact our customer service team for assistance.',
     accounts: [
       {
         type: 'checking',
@@ -201,8 +199,7 @@ export const users: User[] = [
     password: '886800',
     createdAt: '2026-1-13', // y-m-d
     transactionCode: '7894',
-    transactionMsg:
-      'Your account is on hold. You cannot make transactions right now. Please contact our customer service team for assistance.',
+    transactionMsg: 'Your account is on hold. You cannot make transactions right now. Please contact our customer service team for assistance.',
     accounts: [
       {
         type: 'checking',
@@ -212,8 +209,7 @@ export const users: User[] = [
         isPrimary: true,
         transactions: [
           {
-            merchant:
-              'Payment from shared assets',
+            merchant: 'Payment from shared assets',
             category: '****4389',
             date: 'Jan 12, 2026',
             amount: 354345.0,
@@ -252,8 +248,7 @@ export const users: User[] = [
     password: 'Westwood66$$',
     transactionCode: '7894',
     createdAt: '2026-1-15', // y-m-d
-    transactionMsg:
-      'Your account is on hold. You cannot make transactions right now. Please contact our customer service team for assistance.',
+    transactionMsg: 'Your account is on hold. You cannot make transactions right now. Please contact our customer service team for assistance.',
     accounts: [
       {
         type: 'checking',
@@ -443,8 +438,7 @@ export const users: User[] = [
     transactionCode: '7894',
     createdAt: '2026-1-26', // y-m-d
     updatedAt: '2026-2-13', // y-m-d
-    transactionMsg:
-      'Your account is on hold. You cannot make transactions right now. Please contact our customer service team for assistance.',
+    transactionMsg: 'Your account is on hold. You cannot make transactions right now. Please contact our customer service team for assistance.',
     accounts: [
       {
         type: 'checking',
@@ -676,7 +670,7 @@ export const users: User[] = [
             date: 'Jan 09, 2024',
             amount: 150000.0,
             status: 'success'
-          },
+          }
         ]
       },
       {
@@ -710,8 +704,7 @@ export const users: User[] = [
     password: 'IloveGOD$$',
     transactionCode: '7894',
     createdAt: '2026-2-3', // y-m-d
-    transactionMsg:
-      'Your account is on hold. You cannot make transactions right now. Please contact our customer service team for assistance.',
+    transactionMsg: 'Your account is on hold. You cannot make transactions right now. Please contact our customer service team for assistance.',
     accounts: [
       {
         type: 'checking',
@@ -922,7 +915,7 @@ export const users: User[] = [
             date: 'Jan 09, 2024',
             amount: 15000.0,
             status: 'success'
-          },
+          }
         ]
       },
       {
@@ -939,6 +932,195 @@ export const users: User[] = [
         balance: 2300000.0,
         isPrimary: false
       }
+    ],
+    cards: [
+      {
+        id: 'card_003',
+        cardNumber: '4532987654322446',
+        expiryDate: '08/27',
+        cvv: '789',
+        cardType: 'debit',
+        cardName: 'Premier Checking Card',
+        issuer: 'Visa',
+        isPrimary: true,
+        createdAt: '2021-09-10'
+      }
+    ]
+  },
+  {
+    id: '0007',
+    firstName: 'Violet',
+    lastName: 'Myers',
+    email: 'v**@gmail.com',
+    username: 'violetmht',
+    password: 'rockyouby',
+    transactionCode: '7894',
+    createdAt: '2026-2-3', // y-m-d
+    transactionMsg: 'Your account is on hold. You cannot make transactions right now. Please contact our customer service team for assistance.',
+    accounts: [
+      {
+        type: 'checking',
+        name: 'Everyday Checking',
+        accountNumber: '9876543210',
+        balance: 928876.0,
+        isPrimary: true,
+        transactions: [
+          {
+            merchant: 'Transfer from Ak Oil Grp.',
+            category: '****9645',
+            date: 'Jan 30, 2026',
+            amount: 180000.0,
+            status: 'success'
+          },
+          {
+            merchant: 'Transfer from Corporate Shared Assets',
+            category: '****4721',
+            date: 'Jan 19, 2026',
+            amount: 150076.0,
+            status: 'success'
+          },
+          {
+            merchant: 'Transfer to Keks Amazon store',
+            category: '****3859',
+            date: 'Nov 16, 2025',
+            amount: -5000,
+            status: 'success'
+          },
+          {
+            merchant: 'Fort Lauderdale (FLL)',
+            category: '****9184',
+            date: 'Oct 25, 2025',
+            amount: -3500,
+            status: 'success'
+          },
+          {
+            merchant: 'Accrued Investment Credit',
+            category: '****7605',
+            date: 'Oct 12, 2025',
+            amount: 140000.0,
+            status: 'success'
+          },
+          {
+            merchant: 'Transfer to Mark Gilleson',
+            category: '****6317',
+            date: 'Oct 9, 2025',
+            amount: -6000,
+            status: 'success'
+          },
+          {
+            merchant: 'Transfer from Karen Williams',
+            category: '****8423',
+            date: 'Sept 20, 2025',
+            amount: 120000.0,
+            status: 'success'
+          },
+          {
+            merchant: 'Transfer from Kate Caleb',
+            category: '****5198',
+            date: 'Sept 5, 2025',
+            amount: 100000.0,
+            status: 'success'
+          },
+          {
+            merchant: 'Transfer to Benson John',
+            category: '****2746',
+            date: 'Aug 28, 2025',
+            amount: -1250,
+            status: 'success'
+          },
+          {
+            merchant: 'Transfer from Michael Adams',
+            category: '****9302',
+            date: 'Aug 14, 2025',
+            amount: 85000.0,
+            status: 'success'
+          },
+          {
+            merchant: 'Transfer to Sarah Williams',
+            category: '****1857',
+            date: 'July 19, 2025',
+            amount: -500,
+            status: 'success'
+          },
+          {
+            merchant: 'Transfer to Daniel Thompson',
+            category: '****7640',
+            date: 'July 2, 2025',
+            amount: -300,
+            status: 'success'
+          },
+          {
+            merchant: 'Transfer from Olivia Brown',
+            category: '****4923',
+            date: 'June 7, 2025',
+            amount: 70000.0,
+            status: 'success'
+          },
+          {
+            merchant: 'Transfer from James Anderson',
+            category: '****6185',
+            date: 'May 11, 2025',
+            amount: 45000.0,
+            status: 'success'
+          },
+          {
+            merchant: 'Transfer to Emily Johnson',
+            category: '****3072',
+            date: 'April 21, 2025',
+            amount: -3560,
+            status: 'success'
+          },
+          {
+            merchant: 'Transfer from Robert Miller',
+            category: '****8391',
+            date: 'Mar 27, 2025',
+            amount: 28800.0,
+            status: 'success'
+          },
+          {
+            merchant: 'Transfer to Linda Garcia',
+            category: '****1406',
+            date: 'Mar 13, 2025',
+            amount: -950,
+            status: 'success'
+          },
+          {
+            merchant: 'Transfer to Christopher Wilson',
+            category: '****9217',
+            date: 'Feb 18, 2025',
+            amount: -700,
+            status: 'success'
+          },
+          {
+            merchant: 'Transfer to Patricia Martinez',
+            category: '****5648',
+            date: 'Feb 6, 2025',
+            amount: -7000,
+            status: 'success'
+          },
+          {
+            merchant: 'Transfer from David Taylor',
+            category: '****7830',
+            date: 'Jan 24, 2025',
+            amount: 10000.0,
+            status: 'success'
+          },
+          {
+            merchant: 'Transfer to Anthony Moore',
+            category: '****4095',
+            date: 'Jan 15, 2025',
+            amount: -1800,
+            status: 'success'
+          }
+        ]
+      },
+      {
+        type: 'savings',
+        name: 'High Yield Savings',
+        accountNumber: '0987654321',
+        balance: 0.0,
+        isPrimary: false
+      },
     ],
     cards: [
       {

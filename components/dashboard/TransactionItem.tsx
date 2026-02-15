@@ -1,27 +1,58 @@
+import { TransactionStatus } from '@/types/userTypes';
 import { ArrowDownLeft, ArrowUpRight } from 'lucide-react';
 
-type TransactionStatus = 'success' | 'pending' | 'failed' | 'canceled' | 'processing';
-
 interface TransactionItemProps {
+  id?: string;
   merchant: string;
   category: string;
   date: string;
   amount: number;
-  status?: TransactionStatus;
+  status: TransactionStatus;
+  onClick?: () => void;
 }
 
-const statusConfig = {
-  success: { label: 'Success', color: 'bg-[#1fad53]/10 text-[#1fad53]' },
-  pending: { label: 'Pending', color: 'bg-[#91c022]/10 text-[#91c022]' },
-  failed: { label: 'Failed', color: 'bg-[#ef4343]/10 text-[#ef4343]' },
-  canceled: { label: 'Canceled', color: 'bg-muted text-gray-500' },
-  processing: { label: 'Processing', color: 'bg-warning/10 text-warning' }
+const statusConfig: Record<
+  TransactionStatus,
+  {
+    label: string;
+    color: string;
+    amountColor: string;
+  }
+> = {
+  success: {
+    label: 'Success',
+    color: 'bg-[#1fad53]/10 text-[#1fad53]',
+    amountColor: 'text-[#1fad53]' // Green for success CREDITS
+  },
+  pending: {
+    label: 'Pending',
+    color: 'bg-blue-500/10 text-blue-500',
+    amountColor: 'text-blue-500' // Blue for pending
+  },
+  failed: {
+    label: 'Failed',
+    color: 'bg-[#ef4343]/10 text-[#ef4343]',
+    amountColor: 'text-[#ef4343]' // Red for failed
+  },
+  canceled: {
+    label: 'Canceled',
+    color: 'bg-muted text-gray-500',
+    amountColor: 'text-gray-500' // Gray for canceled
+  },
+  processing: {
+    label: 'Processing',
+    color: 'bg-warning/10 text-warning',
+    amountColor: 'text-warning' // Warning color
+  }
 };
 
-const TransactionItem = ({ merchant, category, date, amount, status = 'success' }: TransactionItemProps) => {
+const TransactionItem = ({ merchant, category, date, amount, status, onClick }: TransactionItemProps) => {
   const isCredit = amount >= 0;
   const Icon = isCredit ? ArrowDownLeft : ArrowUpRight;
-  const iconBg = isCredit ? 'bg-[#015299]/10 text-[#015299]' : 'bg-[#015299]/10 text-[#015299]';
+  const statusInfo = statusConfig[status];
+  
+  // FIX: Use the boolean directly, not as a function
+  const iconBg = isCredit ? 'bg-[#1fad53]/10 text-[#1fad53]' : 'bg-[#ef4343]/10 text-[#ef4343]';
 
   const formatCurrency = (value: number) => {
     const formatted = new Intl.NumberFormat('en-US', {
@@ -32,10 +63,8 @@ const TransactionItem = ({ merchant, category, date, amount, status = 'success' 
     return value >= 0 ? `+${formatted}` : `-${formatted}`;
   };
 
-  const statusInfo = statusConfig[status];
-
   return (
-    <div className="flex gap-3 py-3 border-b border-gray-200 last:border-0 hover:bg-[#015299]/30 -mx-2 px-2 rounded-lg transition-colors cursor-pointer">
+    <div onClick={onClick} className="flex gap-3 py-3 border-b border-gray-200/50 last:border-0 hover:bg-[#b40520]/30 -mx-2 px-2 rounded-lg transition-colors cursor-pointer">
       <div className={`p-2.5 h-10 rounded-xl ${iconBg}`}>
         <Icon className="w-5 h-5" />
       </div>
@@ -48,8 +77,12 @@ const TransactionItem = ({ merchant, category, date, amount, status = 'success' 
         </p>
       </div>
       <div className="flex flex-col items-end gap-1">
-        <p className={`font-semibold text-sm text-balance ${isCredit ? 'text-[#1fad53]' : 'text-foreground'}`}>{formatCurrency(amount)}</p>
-        <span className={`text-xs px-2 py-0.5 rounded-full ${statusInfo.color}`}>{statusInfo.label}</span>
+        <p className={`font-semibold text-sm text-balance ${isCredit ? 'text-[#1fad53]' : 'text-foreground'}`}>
+          {formatCurrency(amount)}
+        </p>
+        <span className={`text-xs px-2 py-0.5 rounded-full ${statusInfo.color}`}>
+          {statusInfo.label}
+        </span>
       </div>
     </div>
   );
