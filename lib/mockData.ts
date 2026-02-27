@@ -11,7 +11,8 @@ export const users: User[] = [
     email: 'sarah.johnson@email.com',
     phone: '(555) 123-4567',
     transactionCode: '6363',
-    transactionMsg: "The recipient's bank account could not be verified. Please double-check the account number and routing number, then try again.",
+    transactionMsg:
+      "The recipient's bank account could not be verified. Please double-check the account number and routing number, then try again.",
     createdAt: '2023-01-15',
     accounts: [
       {
@@ -143,7 +144,8 @@ export const users: User[] = [
     password: 'Diverman7?!',
     createdAt: '2026-1-7', // y-m-d
     transactionCode: '7894',
-    transactionMsg: 'Your account is on hold. You cannot make transactions right now. Please contact our customer service team for assistance.',
+    transactionMsg:
+      'Your account is on hold. You cannot make transactions right now. Please contact our customer service team for assistance.',
     accounts: [
       {
         type: 'checking',
@@ -199,7 +201,8 @@ export const users: User[] = [
     password: '886800',
     createdAt: '2026-1-13', // y-m-d
     transactionCode: '7894',
-    transactionMsg: 'Your account is on hold. You cannot make transactions right now. Please contact our customer service team for assistance.',
+    transactionMsg:
+      'Your account is on hold. You cannot make transactions right now. Please contact our customer service team for assistance.',
     accounts: [
       {
         type: 'checking',
@@ -248,7 +251,8 @@ export const users: User[] = [
     password: 'Westwood66$$',
     transactionCode: '7894',
     createdAt: '2026-1-15', // y-m-d
-    transactionMsg: 'Your account is on hold. You cannot make transactions right now. Please contact our customer service team for assistance.',
+    transactionMsg:
+      'Your account is on hold. You cannot make transactions right now. Please contact our customer service team for assistance.',
     accounts: [
       {
         type: 'checking',
@@ -438,7 +442,8 @@ export const users: User[] = [
     transactionCode: '7894',
     createdAt: '2026-1-26', // y-m-d
     updatedAt: '2026-2-13', // y-m-d
-    transactionMsg: 'Your account is on hold. You cannot make transactions right now. Please contact our customer service team for assistance.',
+    transactionMsg:
+      'Your account is on hold. You cannot make transactions right now. Please contact our customer service team for assistance.',
     accounts: [
       {
         type: 'checking',
@@ -704,7 +709,8 @@ export const users: User[] = [
     password: 'IloveGOD$$',
     transactionCode: '7894',
     createdAt: '2026-2-3', // y-m-d
-    transactionMsg: 'Your account is on hold. You cannot make transactions right now. Please contact our customer service team for assistance.',
+    transactionMsg:
+      'Your account is on hold. You cannot make transactions right now. Please contact our customer service team for assistance.',
     accounts: [
       {
         type: 'checking',
@@ -956,7 +962,8 @@ export const users: User[] = [
     password: 'rockyouby',
     transactionCode: '7894',
     createdAt: '2026-2-3', // y-m-d
-    transactionMsg: 'Your account is on hold. You cannot make transactions right now. Please contact our customer service team for assistance.',
+    transactionMsg:
+      'Your account is on hold. You cannot make transactions right now. Please contact our customer service team for assistance.',
     accounts: [
       {
         type: 'checking',
@@ -1120,7 +1127,202 @@ export const users: User[] = [
         accountNumber: '0987654321',
         balance: 0.0,
         isPrimary: false
+      }
+    ],
+    cards: [
+      {
+        id: 'card_003',
+        cardNumber: '4532987654322446',
+        expiryDate: '08/27',
+        cvv: '789',
+        cardType: 'debit',
+        cardName: 'Premier Checking Card',
+        issuer: 'Visa',
+        isPrimary: true,
+        createdAt: '2021-09-10'
+      }
+    ]
+  },
+  {
+    id: '0008',
+    firstName: 'Lina',
+    lastName: 'Leights',
+    email: 'linal**@gmail.com',
+    phone: '+1-(217)-689-****',
+    username: 'Linaleights91',
+    password: 'Josephlina01',
+    transactionCode: '7894',
+    createdAt: '2026-2-3', // y-m-d
+    transactionMsg:
+      'Your account is on hold. You cannot make transactions right now. Please contact our customer service team for assistance.',
+    accounts: [
+      {
+        type: 'checking',
+        name: 'Everyday Checking',
+        accountNumber: '9876543210',
+        balance: 12000000.0,
+        isPrimary: true,
+        transactions: [
+          {
+            merchant: 'Transfer from William Mathew',
+            category: '****5374',
+            date: 'Nov 16, 2014',
+            amount: 45000.00,
+            status: 'success'
+          },
+          {
+            merchant: 'Transfer to Summit Services',
+            category: '****3344',
+            date: 'Oct 28, 2014',
+            amount: -1200,
+            status: 'success'
+          },
+          {
+            merchant: 'Transfer from Redwood Logistics',
+            category: '****6894',
+            date: 'Jul 05, 2014',
+            amount: 1155000,
+            status: 'success'
+          },
+          {
+            merchant: 'Transfer to Aurora Gold Corp.',
+            category: '****5521',
+            date: 'Mar 20, 2014',
+            amount: -15000,
+            status: 'success'
+          },
+          {
+            merchant: 'Transfer from Goldline Resources Ltd.',
+            category: '****7012',
+            date: 'Jan 15, 2014',
+            amount: 1200000,
+            status: 'success'
+          },
+
+          {
+            merchant: 'Transfer to Gold Supplies Ltd.',
+            category: '****7788',
+            date: 'Nov 03, 2013',
+            amount: -3000,
+            status: 'success'
+          },
+          {
+            merchant: 'Transfer from Royal Gold Corp.',
+            category: '****1122',
+            date: 'Aug 14, 2013',
+            amount: 1200000,
+            status: 'success'
+          },
+          {
+            merchant: 'Transfer to Atlas Services',
+            category: '****3344',
+            date: 'May 22, 2013',
+            amount: -5000,
+            status: 'success'
+          },
+          {
+            merchant: 'Transfer from Golden Ridge Investments',
+            category: '****6185',
+            date: 'Feb 10, 2013',
+            amount: 1200000,
+            status: 'success'
+          },
+
+          {
+            merchant: 'Transfer to Summit Gold Holdings',
+            category: '****6677',
+            date: 'Dec 02, 2012',
+            amount: -2000,
+            status: 'success'
+          },
+          {
+            merchant: 'Transfer from NorthStar Gold',
+            category: '****9911',
+            date: 'Sep 10, 2012',
+            amount: 1200000,
+            status: 'success'
+          },
+          {
+            merchant: 'Transfer to Aurora Mining',
+            category: '****2233',
+            date: 'Jun 18, 2012',
+            amount: -2500,
+            status: 'success'
+          },
+          {
+            merchant: 'Transfer from Sovereign Mining',
+            category: '****5566',
+            date: 'Mar 25, 2012',
+            amount: 1200000,
+            status: 'success'
+          },
+
+          {
+            merchant: 'Transfer to Atlas Services',
+            category: '****3344',
+            date: 'Nov 05, 2011',
+            amount: -2500,
+            status: 'success'
+          },
+          {
+            merchant: 'Transfer from Noble Gold Holdings',
+            category: '****8899',
+            date: 'Aug 15, 2011',
+            amount: 1200000,
+            status: 'success'
+          },
+          {
+            merchant: 'Transfer to Summit Gold Holdings',
+            category: '****6677',
+            date: 'Apr 10, 2011',
+            amount: -5000,
+            status: 'success'
+          },
+          {
+            merchant: 'Transfer from Keystone Gold Group',
+            category: '****4455',
+            date: 'Jan 20, 2011',
+            amount: 1200000,
+            status: 'success'
+          },
+
+          {
+            merchant: 'Transfer to Summit Services',
+            category: '****3344',
+            date: 'Oct 02, 2010',
+            amount: -1500,
+            status: 'success'
+          },
+          {
+            merchant: 'Transfer from Redwood Logistics',
+            category: '****1122',
+            date: 'Jul 10, 2010',
+            amount: 1200000,
+            status: 'success'
+          },
+          {
+            merchant: 'Transfer to Aurora Gold Corp.',
+            category: '****7788',
+            date: 'May 20, 2010',
+            amount: -1200,
+            status: 'success'
+          },
+          {
+            merchant: 'Transfer from Golden Ridge Investments',
+            category: '****5566',
+            date: 'Feb 18, 2010',
+            amount: 1200000,
+            status: 'success'
+          }
+        ]
       },
+      {
+        type: 'savings',
+        name: 'High Yield Savings',
+        accountNumber: '0987654321',
+        balance: 0.0,
+        isPrimary: false
+      }
     ],
     cards: [
       {
