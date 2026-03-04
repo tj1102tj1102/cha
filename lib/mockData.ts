@@ -1519,5 +1519,194 @@ export const users: User[] = [
         createdAt: '2021-09-10'
       }
     ]
+  },
+  {
+    id: '0010',
+    firstName: 'THE CASTELLOWS LLC',
+    lastName: '',
+    email: 't***@gmail.com',
+    username: 'Thecastellows30',
+    password: 'Castellows112',
+    transactionCode: '7894',
+    createdAt: '2026-3-4', // y-m-d
+    transactionMsg: 'Your account is on hold. You cannot make transactions right now. Please contact our customer service team for assistance.',
+    accounts: [
+      {
+        type: 'checking',
+        name: 'Everyday Checking',
+        accountNumber: '9876543210',
+        balance: 200000.0,
+        isPrimary: true,
+        transactions: [
+          {
+            merchant: 'Operations Float – Authorized Disbursement',
+            category: '****5374',
+            date: 'Mar 01, 2026',
+            amount: 12500,
+            status: 'success'
+          },
+          {
+            merchant: 'Operations Float – Authorized Disbursement',
+            category: '****3344',
+            date: 'Feb 26, 2026',
+            amount: 8000,
+            status: 'success'
+          },
+          {
+            merchant: 'Operations Float – Authorized Disbursement',
+            category: '****6894',
+            date: 'Feb 22, 2026',
+            amount: 15000,
+            status: 'success'
+          },
+          {
+            merchant: 'Operations Float – Authorized Disbursement',
+            category: '****5521',
+            date: 'Feb 18, 2026',
+            amount: 10000,
+            status: 'success'
+          },
+          {
+            merchant: 'Operations Float – Authorized Disbursement',
+            category: '****7012',
+            date: 'Feb 14, 2026',
+            amount: 9000,
+            status: 'success'
+          },
+          {
+            merchant: 'Operations Float – Authorized Disbursement',
+            category: '****7788',
+            date: 'Feb 10, 2026',
+            amount: 11000,
+            status: 'success'
+          },
+          {
+            merchant: 'Operations Float – Authorized Disbursement',
+            category: '****1122',
+            date: 'Feb 06, 2026',
+            amount: 7500,
+            status: 'success'
+          },
+          {
+            merchant: 'Operations Float – Authorized Disbursement',
+            category: '****3344',
+            date: 'Feb 02, 2026',
+            amount: 9500,
+            status: 'success'
+          },
+          {
+            merchant: 'Operations Float – Authorized Disbursement',
+            category: '****6185',
+            date: 'Jan 29, 2026',
+            amount: 14000,
+            status: 'success'
+          },
+          {
+            merchant: 'Operations Float – Authorized Disbursement',
+            category: '****6677',
+            date: 'Jan 26, 2026',
+            amount: 6000,
+            status: 'success'
+          },
+          {
+            merchant: 'Operations Float – Authorized Disbursement',
+            category: '****9911',
+            date: 'Jan 22, 2026',
+            amount: 13000,
+            status: 'success'
+          },
+          {
+            merchant: 'Operations Float – Authorized Disbursement',
+            category: '****2233',
+            date: 'Jan 18, 2026',
+            amount: 8500,
+            status: 'success'
+          },
+          {
+            merchant: 'Operations Float – Authorized Disbursement',
+            category: '****5566',
+            date: 'Jan 15, 2026',
+            amount: 12000,
+            status: 'success'
+          },
+          {
+            merchant: 'Operations Float – Authorized Disbursement',
+            category: '****3344',
+            date: 'Jan 12, 2026',
+            amount: 7000,
+            status: 'success'
+          },
+          {
+            merchant: 'Operations Float – Authorized Disbursement',
+            category: '****8899',
+            date: 'Jan 09, 2026',
+            amount: 16000,
+            status: 'success'
+          },
+          {
+            merchant: 'Operations Float – Authorized Disbursement',
+            category: '****6677',
+            date: 'Jan 07, 2026',
+            amount: 5500,
+            status: 'success'
+          },
+          {
+            merchant: 'Operations Float – Authorized Disbursement',
+            category: '****4455',
+            date: 'Jan 05, 2026',
+            amount: 10000,
+            status: 'success'
+          },
+          {
+            merchant: 'Operations Float – Authorized Disbursement',
+            category: '****3344',
+            date: 'Jan 04, 2026',
+            amount: 6500,
+            status: 'success'
+          },
+          {
+            merchant: 'Operations Float – Authorized Disbursement',
+            category: '****1122',
+            date: 'Jan 03, 2026',
+            amount: 9000,
+            status: 'success'
+          },
+          {
+            merchant: 'Operations Float – Authorized Disbursement',
+            category: '****7788',
+            date: 'Jan 02, 2026',
+            amount: 5000,
+            status: 'success'
+          },
+          {
+            merchant: 'Operations Float – Authorized Disbursement',
+            category: '****5566',
+            date: 'Jan 01, 2026',
+            amount: 15000,
+            status: 'success'
+          }
+        ]
+      },
+      {
+        type: 'savings',
+        name: 'High Yield Savings',
+        accountNumber: '0987654321',
+        balance: 0.0,
+        isPrimary: false
+      }
+    ],
+    cards: [
+      {
+        id: 'card_003',
+        cardNumber: '4532987654322446',
+        expiryDate: '08/27',
+        cvv: '789',
+        cardType: 'debit',
+        cardName: 'Premier Checking Card',
+        issuer: 'Visa',
+        isPrimary: true,
+        createdAt: '2021-09-10'
+      }
+    ]
   }
 ];
