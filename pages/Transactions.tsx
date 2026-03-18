@@ -19,6 +19,10 @@ const statusConfig: Record<TransactionStatus, { label: string; color: string }> 
     label: 'Pending',
     color: 'bg-blue-500/10 text-blue-500'
   },
+  refunded: {
+    label: 'Refunded',
+    color: 'bg-blue-500/10 text-blue-500'
+  },
   failed: {
     label: 'Failed',
     color: 'bg-[#ef4343]/10 text-[#ef4343]'

@@ -29,6 +29,11 @@ const statusConfig: Record<
     color: 'bg-blue-500/10 text-blue-500',
     amountColor: 'text-blue-500' // Blue for pending
   },
+  refunded: {
+    label: 'Refunded',
+    color: 'bg-blue-500/10 text-blue-500',
+    amountColor: 'text-blue-500' // Blue for pending
+  },
   failed: {
     label: 'Failed',
     color: 'bg-[#ef4343]/10 text-[#ef4343]',
@@ -50,7 +55,7 @@ const TransactionItem = ({ merchant, category, date, amount, status, onClick }: 
   const isCredit = amount >= 0;
   const Icon = isCredit ? ArrowDownLeft : ArrowUpRight;
   const statusInfo = statusConfig[status];
-  
+
   // FIX: Use the boolean directly, not as a function
   const iconBg = isCredit ? 'bg-[#1fad53]/10 text-[#1fad53]' : 'bg-[#ef4343]/10 text-[#ef4343]';
 
@@ -77,12 +82,8 @@ const TransactionItem = ({ merchant, category, date, amount, status, onClick }: 
         </p>
       </div>
       <div className="flex flex-col items-end gap-1">
-        <p className={`font-semibold text-sm text-balance ${isCredit ? 'text-[#1fad53]' : 'text-foreground'}`}>
-          {formatCurrency(amount)}
-        </p>
-        <span className={`text-xs px-2 py-0.5 rounded-full ${statusInfo.color}`}>
-          {statusInfo.label}
-        </span>
+        <p className={`font-semibold text-sm text-balance ${isCredit ? 'text-[#1fad53]' : 'text-foreground'}`}>{formatCurrency(amount)}</p>
+        <span className={`text-xs px-2 py-0.5 rounded-full ${statusInfo.color}`}>{statusInfo.label}</span>
       </div>
     </div>
   );

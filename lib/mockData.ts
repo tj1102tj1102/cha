@@ -437,43 +437,64 @@ export const users: User[] = [
     password: 'Kate66$$',
     transactionCode: '7894',
     createdAt: '2026-1-26', // y-m-d
-    updatedAt: '2026-2-13', // y-m-d
+    updatedAt: '2026-3-18', // y-m-d
     transactionMsg: 'Your account is on hold. You cannot make transactions right now. Please contact our customer service team for assistance.',
     accounts: [
       {
         type: 'checking',
         name: 'Everyday Checking',
         accountNumber: '9876543210',
-        balance: 11000000.0,
+        balance: 12500000.0,
         isPrimary: true,
         transactions: [
+          {
+            merchant: 'Ach transfer to Gary Faunda 7/17 Credit Union',
+            category: '****2407',
+            date: 'Mar 14, 2026',
+            amount: -1000000.0,
+            status: 'pending'
+          },
+          {
+            merchant: 'Ach transfer from Terry j faunda Citi Bnk',
+            category: '****4473',
+            date: 'Mar 14, 2026',
+            amount: 500000.0,
+            status: 'success'
+          },
+          {
+            merchant: 'Ach transfer from Terry j faunda We**Fargo',
+            category: '****8437',
+            date: 'Mar 14, 2026',
+            amount: 500000.0,
+            status: 'success'
+          },
           {
             merchant: 'Ach transfer to Terry j faunda Citi Bnk',
             category: '****8763',
             date: 'Feb 10, 2026',
             amount: 250000.0,
-            status: 'pending'
+            status: 'success'
           },
           {
             merchant: 'Ach transfer to Terry j faunda Wells Fargo',
             category: '****4883',
             date: 'Feb 10, 2026',
             amount: 250000.0,
-            status: 'pending'
+            status: 'success'
           },
           {
             merchant: 'Ach transfer to Terry j faunda one Nevada',
             category: '****6423',
             date: 'Feb 10, 2026',
-            amount: 1000000.0,
-            status: 'pending'
+            amount: -1000000.0,
+            status: 'refunded'
           },
           {
             merchant: 'Ach transfer to Mary brackel Capital One',
             category: '****2368',
             date: 'Feb 10, 2026',
-            amount: 2500000.0,
-            status: 'pending'
+            amount: -2500000.0,
+            status: 'refunded'
           },
           {
             merchant: 'Transfer from Corporate Shared Assets',
