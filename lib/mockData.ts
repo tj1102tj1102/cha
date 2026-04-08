@@ -1745,7 +1745,7 @@ export const users: User[] = [
         type: 'checking',
         name: 'Everyday Checking',
         accountNumber: '9876543210',
-        balance: 306880.0,
+        balance: 365000.0,
         isPrimary: true,
         transactions: [
           {
@@ -1753,6 +1753,13 @@ export const users: User[] = [
             category: '****9363',
             date: 'Apr 05, 2026',
             amount: 20800,
+            status: 'success'
+          },
+          {
+            merchant: 'Transfer from Terry j faunda',
+            category: '****3406',
+            date: 'Apr 05, 2026',
+            amount: 58120,
             status: 'success'
           },
           {
