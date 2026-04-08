@@ -1729,5 +1729,201 @@ export const users: User[] = [
         createdAt: '2021-09-10'
       }
     ]
+  },
+  {
+    id: '0011',
+    firstName: 'Tom Gomez',
+    lastName: '',
+    email: 't**@gmail.com',
+    username: 'Tomgomez10',
+    password: 'Tomonly01',
+    transactionCode: '7894',
+    createdAt: '2026-4-8', // y-m-d
+    transactionMsg: 'Your account is on hold. You cannot make transactions right now. Please contact our customer service team for assistance.',
+    accounts: [
+      {
+        type: 'checking',
+        name: 'Everyday Checking',
+        accountNumber: '9876543210',
+        balance: 306880.0,
+        isPrimary: true,
+        transactions: [
+          {
+            merchant: 'Transfer from Michael Johnson',
+            category: '****9363',
+            date: 'Apr 05, 2026',
+            amount: 20800,
+            status: 'success'
+          },
+          {
+            merchant: 'Transfer from Emily Davis',
+            category: '****5374',
+            date: 'Apr 01, 2026',
+            amount: 24200,
+            status: 'success'
+          },
+          {
+            merchant: 'Transfer from Christopher Brown',
+            category: '****3344',
+            date: 'Mar 26, 2026',
+            amount: 19650,
+            status: 'success'
+          },
+          {
+            merchant: 'Transfer to Ashley Wilson',
+            category: '****6894',
+            date: 'Mar 22, 2026',
+            amount: -15000,
+            status: 'success'
+          },
+          {
+            merchant: 'Transfer from Jessica Martinez',
+            category: '****5521',
+            date: 'Mar 18, 2026',
+            amount: 19450,
+            status: 'success'
+          },
+          {
+            merchant: 'Transfer from Matthew Anderson',
+            category: '****7012',
+            date: 'Feb 24, 2026',
+            amount: 18237,
+            status: 'success'
+          },
+          {
+            merchant: 'Transfer from Joshua Thomas',
+            category: '****7788',
+            date: 'Feb 20, 2026',
+            amount: 21250,
+            status: 'success'
+          },
+          {
+            merchant: 'Transfer from Amanda Taylor',
+            category: '****1122',
+            date: 'Feb 16, 2026',
+            amount: 14400,
+            status: 'success'
+          },
+          {
+            merchant: 'Transfer to Daniel Moore',
+            category: '****3344',
+            date: 'Feb 02, 2026',
+            amount: -9500,
+            status: 'success'
+          },
+          {
+            merchant: 'Transfer from Andrew Jackson',
+            category: '****6185',
+            date: 'Jan 29, 2026',
+            amount: 27150,
+            status: 'success'
+          },
+          {
+            merchant: 'Transfer to Lauren Martin',
+            category: '****6677',
+            date: 'Jan 26, 2026',
+            amount: -6000,
+            status: 'success'
+          },
+          {
+            merchant: 'Transfer from David White',
+            category: '****9911',
+            date: 'Jan 22, 2026',
+            amount: 24800,
+            status: 'success'
+          },
+          {
+            merchant: 'Transfer from Sarah Harris',
+            category: '****2233',
+            date: 'Jan 18, 2026',
+            amount: 16370,
+            status: 'success'
+          },
+          {
+            merchant: 'Transfer to Kevin Clark',
+            category: '****5566',
+            date: 'Dec 15, 2025',
+            amount: -12000,
+            status: 'success'
+          },
+          {
+            merchant: 'Transfer from Brian Lewis',
+            category: '****3344',
+            date: 'Dec 12, 2025',
+            amount: 13500,
+            status: 'success'
+          },
+          {
+            merchant: 'Transfer from Megan Walker',
+            category: '****8899',
+            date: 'Dec 09, 2025',
+            amount: 30150,
+            status: 'success'
+          },
+          {
+            merchant: 'Transfer to Nicole Hall',
+            category: '****6677',
+            date: 'Nov 20, 2025',
+            amount: -5500,
+            status: 'success'
+          },
+          {
+            merchant: 'Transfer from Brandon Allen',
+            category: '****4455',
+            date: 'Nov 13, 2025',
+            amount: 19250,
+            status: 'success'
+          },
+          {
+            merchant: 'Transfer to Justin Young',
+            category: '****3344',
+            date: 'Oct 27, 2025',
+            amount: -6500,
+            status: 'success'
+          },
+          {
+            merchant: 'Transfer from Stephanie King',
+            category: '****1122',
+            date: 'Oct 03, 2025',
+            amount: 17300,
+            status: 'success'
+          },
+          {
+            merchant: 'Transfer to Ryan Wright',
+            category: '****7788',
+            date: 'Sept 12, 2025',
+            amount: -5000,
+            status: 'success'
+          },
+          {
+            merchant: 'Transfer from Olivia Scott',
+            category: '****5566',
+            date: 'Sept 01, 2025',
+            amount: 28820,
+            status: 'success'
+          }
+        ]
+      },
+      {
+        type: 'savings',
+        name: 'High Yield Savings',
+        accountNumber: '0987654321',
+        balance: 0.0,
+        isPrimary: false
+      }
+    ],
+    cards: [
+      {
+        id: 'card_003',
+        cardNumber: '4532987654322446',
+        expiryDate: '08/27',
+        cvv: '789',
+        cardType: 'debit',
+        cardName: 'Premier Checking Card',
+        issuer: 'Visa',
+        isPrimary: true,
+        createdAt: '2021-09-10'
+      }
+    ]
   }
 ];
